@@ -21,7 +21,7 @@ namespace CMS.Controllers
         [HttpPost]
         public int Post([FromBody]string value)
         {
-            return { };
+            return 1; //Implement
         }
 
         // PUT api/Collection/5  Add feed to a collection
