@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CMS.Models.Feeds;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace CMS.Controllers
 {
@@ -12,18 +13,27 @@ namespace CMS.Controllers
     public class CollectionController : Controller
     {
         FeedsContext db;
+        private IMemoryCache cache;
 
-        public CollectionController(FeedsContext context)
+        public CollectionController(FeedsContext context, IMemoryCache memoryCache)
         {
             this.db = context;
+            cache = memoryCache;
         }
 
         // GET api/id Collection  Get all news for a collection{id}
         [HttpGet("{id}")]
         public IActionResult Get(double id)
         {
-            CollectionFeeds feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
-            if (feeds == null) return NotFound();
+            CollectionFeeds feeds = null;
+            if (!cache.TryGetValue(id, out feeds))
+            {
+
+                feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
+                if (feeds == null) return NotFound();
+                cache.Set(feeds.Id, feeds,
+                    new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(30))); // Store cache 30 min
+            }
 
             return new ObjectResult(feeds.CollFeeds.ToList());
         }
@@ -59,7 +69,18 @@ namespace CMS.Controllers
             var factory = new Feed().ExecuteCreation(link.FeedType, link.Name);
             List<NewsItem> newsItems = (List<NewsItem>) factory.GetFeeds(link.Name);
             feeds.CollFeeds.AddRange(newsItems);
-            db.SaveChanges();
+            int n = db.SaveChanges();
+            if (n > 0)
+            {
+                cache.Set(feeds.Id, feeds, new MemoryCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(30)
+                });
+            }
+
+
+
+
             return Ok();
         }
 
