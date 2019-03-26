@@ -12,20 +12,19 @@ namespace CMS.Models.Feeds
         {
             Title = "";
             Content = "";
+            Link = "";
             PublishDate = DateTime.Now;
-            FeedType = FeedType.Atom;
         }
 
         public AtomNews(string url)
         {
             Title = "";
             Content = "";
+            Link = "";
             PublishDate = DateTime.Now;
-            FeedType = FeedType.Atom;
-            Link = new Link { Name = url };
         }
 
-        public override IList<NewsItem> GetFeeds(string url)
+        public override IList<NewsItem> GetNews(string url)
         {
             try
             {
@@ -33,9 +32,8 @@ namespace CMS.Models.Feeds
                 var entries = from item in doc.Root.Elements().Where(i => i.Name.LocalName == "entry")
                               select new AtomNews()
                               {
-                                  FeedType = FeedType.Atom,
+                                  Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
                                   Content = item.Elements().First(i => i.Name.LocalName == "summary").Value,
-                                  Link = new Link { Name = item.Elements().First(i => i.Name.LocalName == "link").Attribute("href").Value },
                                   PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "updated").Value),
                                   Title = item.Elements().First(i => i.Name.LocalName == "title").Value
                               };

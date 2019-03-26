@@ -56,7 +56,7 @@ namespace CMS.Controllers
 
         // PUT api/Collection/5  Add feed to a collection
         [HttpPut]
-        public IActionResult Put(int id, [FromBody]Link link)
+        public IActionResult Put(int id, [FromBody]Feed link)
         {
             if (link == null)
             {
@@ -66,9 +66,9 @@ namespace CMS.Controllers
             CollectionFeeds feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
             if (feeds == null) return NotFound();
 
-            var factory = new Feed().ExecuteCreation(link.FeedType, link.Name);
-            List<NewsItem> newsItems = (List<NewsItem>) factory.GetFeeds(link.Name);
-            feeds.CollFeeds.AddRange(newsItems);
+            var factory = new Feeds().ExecuteCreation(link.FeedType, link.Name);
+            List<NewsItem> newsItems = (List<NewsItem>) factory.GetNews(link.Name);
+            feeds.CollFeeds.Add(link);
             int n = db.SaveChanges();
             if (n > 0)
             {

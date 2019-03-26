@@ -13,20 +13,19 @@ namespace CMS.Models.Feeds
         {
             Title = "";
             Content = "";
+            Link = "";
             PublishDate = DateTime.Now;
-            FeedType = FeedType.RSS;
-            Link = new Link { Name = url };
         }
 
         public RSSNews()
         {
             Title = "";
             Content = "";
+            Link = "";
             PublishDate = DateTime.Now;
-            FeedType = FeedType.RSS;
         }
 
-        public override IList<NewsItem> GetFeeds(string url)
+        public override IList<NewsItem> GetNews(string url)
         {
             try
             {
@@ -34,9 +33,8 @@ namespace CMS.Models.Feeds
                 var entries = from item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item")
                               select new RSSNews()
                               {
-                                  FeedType = FeedType.RSS,
+                                  Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
                                   Content = item.Elements().First(i => i.Name.LocalName == "description").Value,
-                                  Link = new Link { Name =  item.Elements().First(i => i.Name.LocalName == "link").Value },
                                   PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
                                   Title = item.Elements().First(i => i.Name.LocalName == "title").Value
                               };

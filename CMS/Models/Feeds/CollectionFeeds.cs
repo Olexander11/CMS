@@ -9,6 +9,6 @@ namespace CMS.Models.Feeds
     {
         public double Id { get; set; }
         public string Name { get; set; }
-        public List<NewsItem> CollFeeds { get; set; }
+        public List<Feed> CollFeeds { get; set; }
     }
 }
