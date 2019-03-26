@@ -7,9 +7,9 @@ namespace CMS.Models.Feeds
 {
     public class RSSFactory : FeedFactory
     {
-        public override Feed Create(string url)
+        public override NewsItem Create(string url)
         {
-            return new RSSFeed(url);
+            return new RSSNews(url);
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Xml.Linq;
 
 namespace CMS.Models.Feeds
 {
-    public class AtomFeed : Feed
+    public class AtomNews : NewsItem
     {
-        public AtomFeed()
+        public AtomNews()
         {
             Title = "";
             Content = "";
@@ -16,7 +16,7 @@ namespace CMS.Models.Feeds
             FeedType = FeedType.Atom;
         }
 
-        public AtomFeed(string url)
+        public AtomNews(string url)
         {
             Title = "";
             Content = "";
@@ -25,13 +25,13 @@ namespace CMS.Models.Feeds
             Link = new Link { Name = url };
         }
 
-        public override IList<Feed> GetFeeds(string url)
+        public override IList<NewsItem> GetFeeds(string url)
         {
             try
             {
                 XDocument doc = XDocument.Load(url);
                 var entries = from item in doc.Root.Elements().Where(i => i.Name.LocalName == "entry")
-                              select new AtomFeed()
+                              select new AtomNews()
                               {
                                   FeedType = FeedType.Atom,
                                   Content = item.Elements().First(i => i.Name.LocalName == "summary").Value,
@@ -39,11 +39,11 @@ namespace CMS.Models.Feeds
                                   PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "updated").Value),
                                   Title = item.Elements().First(i => i.Name.LocalName == "title").Value
                               };
-                return (IList<Feed>)entries.ToList();
+                return (IList<NewsItem>)entries.ToList();
             }
             catch
             {
-                return new List<Feed>();
+                return new List<NewsItem>();
             }
         }
 

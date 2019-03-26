@@ -6,10 +6,10 @@ using System.Xml.Linq;
 
 namespace CMS.Models.Feeds
 {
-    public class RSSFeed : Feed
+    public class RSSNews : NewsItem
     {
 
-        public RSSFeed(string url)
+        public RSSNews(string url)
         {
             Title = "";
             Content = "";
@@ -18,7 +18,7 @@ namespace CMS.Models.Feeds
             Link = new Link { Name = url };
         }
 
-        public RSSFeed()
+        public RSSNews()
         {
             Title = "";
             Content = "";
@@ -26,13 +26,13 @@ namespace CMS.Models.Feeds
             FeedType = FeedType.RSS;
         }
 
-        public override IList<Feed> GetFeeds(string url)
+        public override IList<NewsItem> GetFeeds(string url)
         {
             try
             {
                 XDocument doc = XDocument.Load(url);
                 var entries = from item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item")
-                              select new RSSFeed()
+                              select new RSSNews()
                               {
                                   FeedType = FeedType.RSS,
                                   Content = item.Elements().First(i => i.Name.LocalName == "description").Value,
@@ -40,11 +40,11 @@ namespace CMS.Models.Feeds
                                   PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
                                   Title = item.Elements().First(i => i.Name.LocalName == "title").Value
                               };
-                return (IList<Feed>)entries.ToList();
+                return (IList<NewsItem>)entries.ToList();
             }
             catch
             {
-                return new List<Feed>();
+                return new List<NewsItem>();
             }
         }
 

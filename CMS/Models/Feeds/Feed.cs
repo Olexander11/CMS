@@ -5,22 +5,22 @@ using System.Threading.Tasks;
 
 namespace CMS.Models.Feeds
 {
-    public abstract class Feed
+    public class Feed
     {
-        public long Id { get; set; }
-        public Link Link { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
-        public DateTime PublishDate { get; set; }
-        public FeedType FeedType { get; set; }
+        private readonly Dictionary<FeedType, FeedFactory> _factories;
 
-        public abstract IList<Feed> GetFeeds(string url);
-        public abstract bool IsExist(string url);
-        
-    }
+        public Feed()
+        {
+            foreach (FeedType type in Enum.GetValues(typeof(FeedType)))
+            {
+                var factory = (FeedFactory)Activator.CreateInstance(Type.GetType("FactoryMethod." + Enum.GetName(typeof(FeedType), type) + "Factory"));
+                _factories.Add(type, factory);
+            }
+        }
+        // to execute var factory = new Feed().ExecuteCreation(FeedType.RSS, "url");
+        // factory.GetFeeds();
+        public NewsItem ExecuteCreation(FeedType type, string url) => _factories[type].Create(url);
 
-    public enum FeedType {
-    RSS,
-    Atom
+
     }
 }

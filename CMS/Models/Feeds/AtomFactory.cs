@@ -7,9 +7,9 @@ namespace CMS.Models.Feeds
 {
     public class AtomFactory : FeedFactory
     {
-        public override Feed Create(string url)
+        public override NewsItem Create(string url)
         {
-            return new AtomFeed(url);
+            return new AtomNews(url);
         }
     }
 }

@@ -7,6 +7,6 @@ namespace CMS.Models.Feeds
 {
     public abstract class FeedFactory
     {
-        public abstract Feed Create(string url);
+        public abstract NewsItem Create(string url);
     }
 }
