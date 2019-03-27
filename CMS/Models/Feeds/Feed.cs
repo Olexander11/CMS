@@ -8,12 +8,13 @@ namespace CMS.Models.Feeds
 {
     public class Feed
     {
-        public double Id { get; set; }
+        public long Id { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string Url { get; set; }
         [Required]
         public FeedType FeedType { get; set; }
         public List<NewsItem> News { get; set; }
+        public List<CollectionFeeds> Collections { get; set; }
 
-}
+    }
 }

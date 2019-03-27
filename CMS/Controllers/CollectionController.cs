@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using CMS.Models.Feeds;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+
 
 namespace CMS.Controllers
 {
@@ -13,28 +13,18 @@ namespace CMS.Controllers
     public class CollectionController : Controller
     {
         FeedsContext db;
-        private IMemoryCache cache;
-
-        public CollectionController(FeedsContext context, IMemoryCache memoryCache)
+       
+        public CollectionController(FeedsContext context)
         {
             this.db = context;
-            cache = memoryCache;
         }
 
         // GET api/id Collection  Get all news for a collection{id}
         [HttpGet("{id}")]
-        public IActionResult Get(double id)
+        public IActionResult Get(long id)
         {
-            CollectionFeeds feeds = null;
-            if (!cache.TryGetValue(id, out feeds))
-            {
-
-                feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
-                if (feeds == null) return NotFound();
-                cache.Set(feeds.Id, feeds,
-                    new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(30))); // Store cache 30 min
-            }
-
+            CollectionFeeds feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
+            if (feeds == null) return NotFound();
             return new ObjectResult(feeds.CollFeeds.ToList());
         }
 
@@ -56,31 +46,18 @@ namespace CMS.Controllers
 
         // PUT api/Collection/5  Add feed to a collection
         [HttpPut]
-        public IActionResult Put(int id, [FromBody]Feed link)
+        public IActionResult Put(long id, [FromBody]Feed feed)
         {
-            if (link == null)
+            if (feed == null)
             {
                 return BadRequest();
             }
 
             CollectionFeeds feeds = db.Collections.Include(s => s.CollFeeds).FirstOrDefault(x => x.Id == id);
             if (feeds == null) return NotFound();
-
-            var factory = new Feeds().ExecuteCreation(link.FeedType, link.Name);
-            List<NewsItem> newsItems = (List<NewsItem>) factory.GetNews(link.Name);
-            feeds.CollFeeds.Add(link);
-            int n = db.SaveChanges();
-            if (n > 0)
-            {
-                cache.Set(feeds.Id, feeds, new MemoryCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(30)
-                });
-            }
-
-
-
-
+                        
+            feeds.CollFeeds.Add(feed);
+            db.SaveChanges();
             return Ok();
         }
 

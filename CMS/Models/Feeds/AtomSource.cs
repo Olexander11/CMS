@@ -6,31 +6,24 @@ using System.Xml.Linq;
 
 namespace CMS.Models.Feeds
 {
-    public class AtomNews : NewsItem
+    public class AtomSource : ISourceNews
     {
-        public AtomNews()
+        
+        public FeedType FeedType
         {
-            Title = "";
-            Content = "";
-            Link = "";
-            PublishDate = DateTime.Now;
+            get
+            {
+                return FeedType.Atom;
+            }
         }
 
-        public AtomNews(string url)
-        {
-            Title = "";
-            Content = "";
-            Link = "";
-            PublishDate = DateTime.Now;
-        }
-
-        public override IList<NewsItem> GetNews(string url)
+        public  IList<NewsItem> GetNews(string url)
         {
             try
             {
                 XDocument doc = XDocument.Load(url);
                 var entries = from item in doc.Root.Elements().Where(i => i.Name.LocalName == "entry")
-                              select new AtomNews()
+                              select new NewsItem()
                               {
                                   Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
                                   Content = item.Elements().First(i => i.Name.LocalName == "summary").Value,
@@ -45,9 +38,6 @@ namespace CMS.Models.Feeds
             }
         }
 
-        public override bool IsExist(string url)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

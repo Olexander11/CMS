@@ -6,32 +6,24 @@ using System.Xml.Linq;
 
 namespace CMS.Models.Feeds
 {
-    public class RSSNews : NewsItem
+    public class RSSSource : ISourceNews
     {
 
-        public RSSNews(string url)
+        public FeedType FeedType
         {
-            Title = "";
-            Content = "";
-            Link = "";
-            PublishDate = DateTime.Now;
+            get
+            {
+                return FeedType.Atom;
+            }
         }
 
-        public RSSNews()
-        {
-            Title = "";
-            Content = "";
-            Link = "";
-            PublishDate = DateTime.Now;
-        }
-
-        public override IList<NewsItem> GetNews(string url)
+        public  IList<NewsItem> GetNews(string url)
         {
             try
             {
                 XDocument doc = XDocument.Load(url);
                 var entries = from item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item")
-                              select new RSSNews()
+                              select new NewsItem()
                               {
                                   Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
                                   Content = item.Elements().First(i => i.Name.LocalName == "description").Value,
@@ -46,9 +38,5 @@ namespace CMS.Models.Feeds
             }
         }
 
-        public override bool IsExist(string url)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -10,7 +10,7 @@ namespace CMS.Models.Feeds
     {
         public DbSet<CollectionFeeds> Collections { get; set; }
         public DbSet<NewsItem> News { get; set; }
-        public DbSet<Feed> Links { get; set; }
+        public DbSet<Feed> Feeds { get; set; }
 
         public FeedsContext()
         {

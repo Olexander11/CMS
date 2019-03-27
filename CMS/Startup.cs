@@ -36,14 +36,14 @@ namespace CMS
         {
             DateTime now = DateTime.Now;
             string logFile = now.ToString("ddMMyy") + "logger.txt";
-            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), logFile));
+            loggerFactory.AddFile(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "Logs"), logFile));
             var logger = loggerFactory.CreateLogger("FileLogger");
 
-            app.Run(async (context) =>
-            {
-                logger.LogInformation("Processing request {0}", context.Request.Path);
-                await context.Response.WriteAsync("CMS"); // ???
-            });
+            //app.Run(async (context) =>
+            //{
+            //    logger.LogInformation("Processing request {0}", context.Request.Path);
+            //    await context.Response.WriteAsync("CMS"); // ???
+            //});
 
             if (env.IsDevelopment())
             {

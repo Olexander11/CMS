@@ -20,30 +20,29 @@ namespace CMS.Services
         }
 
         public void ReloadAllNews() {
-            var feeds = db.Links.ToList();
+            var feeds = db.Feeds.ToList();
             foreach (Feed feed in feeds)
             {
                 UpdateCurrentFeed(feed.Id);
             }
          }
 
-        private void UpdateCurrentFeed(double id)
+        private void UpdateCurrentFeed(long id)
         {
-            Feed link = db.Links.FirstOrDefault(x => x.Id == id);
-            List<NewsItem> oldItems = db.News.ToList();
+            Feed link = db.Feeds.FirstOrDefault(x => x.Id == id);
+            List<NewsItem> oldItems = link.News.ToList();
             List<NewsItem> updateItems = new List<NewsItem>();
-            var factory = new Feeds().ExecuteCreation(link.FeedType, link.Name);
-            List<NewsItem> newsItems = (List<NewsItem>)factory.GetNews(link.Name);
+            var newsItems = SourceFactory.Instance.GetSourceNews(link.FeedType).GetNews(link.Url);
 
             foreach (NewsItem item in newsItems)
             {
-                if(!oldItems.Exists(x => x.Title == item.Title)){
+                if (!oldItems.Exists(x => x.Title == item.Title))
+                {
                     updateItems.Add(item);
                 }
-
             }
 
-            link.News.AddRange(newsItems);
+            link.News.AddRange(updateItems);
             db.SaveChanges();
         }
     }
