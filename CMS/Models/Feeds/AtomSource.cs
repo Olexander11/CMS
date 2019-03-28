@@ -17,19 +17,28 @@ namespace CMS.Models.Feeds
             }
         }
 
-        public  IList<NewsItem> GetNews(string url)
+        public  IList<NewsItem> GetNews(Feed feed)
         {
             try
             {
-                XDocument doc = XDocument.Load(url);
-                var entries = from item in doc.Root.Elements().Where(i => i.Name.LocalName == "entry")
-                              select new NewsItem()
-                              {
-                                  Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
-                                  Content = item.Elements().First(i => i.Name.LocalName == "summary").Value,
-                                  PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "updated").Value),
-                                  Title = item.Elements().First(i => i.Name.LocalName == "title").Value
-                              };
+                XDocument doc = XDocument.Load(feed.Url);
+                List<NewsItem> entries = new List<NewsItem>();
+                XNamespace xNamespace = "http://www.w3.org/2005/Atom";
+                var items = doc.Root.Descendants(xNamespace+"entry");
+               
+                foreach (XElement item in items)
+                {
+                    entries.Add(new NewsItem()
+                    {
+                        Link = FillParams("link", item),
+                        Content = FillParams("summary", item),
+                        PublishDate = DateTime.TryParse(FillParams("updated", item), out DateTime validValue) ? validValue : (DateTime?)null,
+                        Title = FillParams("title", item),                        
+                        Feed = feed
+                    });
+                    
+                }
+               
                 return (IList<NewsItem>)entries.ToList();
             }
             catch
@@ -38,6 +47,11 @@ namespace CMS.Models.Feeds
             }
         }
 
-       
+        private string FillParams(string text, XElement item)
+        {
+            XElement result = item.Elements().FirstOrDefault(i => i.Name.LocalName == text);
+            return result == null ? "" : result.Value;
+
+        }
     }
 }

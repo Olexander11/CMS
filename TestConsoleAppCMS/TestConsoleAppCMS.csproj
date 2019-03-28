@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D724867-3D87-429F-AF44-89056A94AA4E}</ProjectGuid>
+    <ProjectGuid>{46BFAA99-6125-40E7-9462-3BCEA71EF7A7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TestConsoleApp</RootNamespace>
-    <AssemblyName>TestConsoleApp</AssemblyName>
+    <RootNamespace>TestConsoleAppCMS</RootNamespace>
+    <AssemblyName>TestConsoleAppCMS</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

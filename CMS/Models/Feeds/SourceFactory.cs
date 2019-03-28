@@ -19,6 +19,8 @@ namespace CMS.Models.Feeds
                 if (type.IsAssignableFrom(t) && t.IsClass)
                 {
                     var source = (ISourceNews)Activator.CreateInstance(t);
+
+                    // var source = (ISourceNews)System.Runtime.Serialization.FormatterServices.GetUninitializedObject(t); 
                     _sources[source.FeedType] = source;
                 }
 

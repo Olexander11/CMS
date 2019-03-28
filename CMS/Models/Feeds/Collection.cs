@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace CMS.Models.Feeds
 {
-    public class CollectionFeeds
+    public class Collection
     {
-        public double Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
-        public List<Feed> CollFeeds { get; set; }
+        
+        public IList<CollectionFeed> CollectionFeed { get; set; }
+
     }
 }

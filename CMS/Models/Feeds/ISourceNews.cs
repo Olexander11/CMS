@@ -7,13 +7,13 @@ namespace CMS.Models.Feeds
 {
     public interface ISourceNews
     {
-        IList<NewsItem> GetNews(string url);
+        IList<NewsItem> GetNews(Feed feed);
         FeedType FeedType { get; }
     }
 
     public enum FeedType
     {
-        RSS,
-        Atom
+        RSS = 1,
+        Atom = 2
     }
 }

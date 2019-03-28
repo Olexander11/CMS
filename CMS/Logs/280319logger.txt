@@ -1,0 +1,2107 @@
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1862.5782ms 200 
+Request finished in 7491.3738ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 936.7736ms 404 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1590.8711ms 200 
+Request finished in 2314.5375ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (592ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (21ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (249ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing HttpStatusCodeResult, setting HTTP status code 200
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 77089.1631ms
+Request finished in 79495.5424ms 200 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1427.1399ms 200 
+Request finished in 4930.987ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (611ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (197ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (39ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing HttpStatusCodeResult, setting HTTP status code 200
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 13843.8793ms
+Request finished in 15839.9279ms 200 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1902.6971ms 200 
+Request finished in 4105.5641ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (244ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (55ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (24ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing HttpStatusCodeResult, setting HTTP status code 200
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 12161.8155ms
+Request finished in 12972.5581ms 200 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 599.2619ms 200 
+Request finished in 2743.2212ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (357ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (122ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (115ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing HttpStatusCodeResult, setting HTTP status code 200
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 68297.2956ms
+Request finished in 73563.6125ms 200 
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 10414.5039ms 200 
+Request finished in 5379.2445ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (368ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1192.9143ms 200 
+Request finished in 2632.026ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (495ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1398.5404ms 200 
+Request finished in 2758.1195ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (305ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 798.0434ms 200 
+Request finished in 2009.6305ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (252ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (207ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p101='?', @p102='?' (Size = 4000), @p103='?', @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?', @p107='?' (Size = 4000), @p108='?', @p109='?' (Size = 4000), @p110='?' (Size = 4000), @p111='?', @p112='?' (Size = 4000), @p113='?', @p114='?' (Size = 4000), @p115='?' (Size = 4000), @p116='?', @p117='?' (Size = 4000), @p118='?', @p119='?' (Size = 4000), @p120='?' (Size = 4000), @p121='?', @p122='?' (Size = 4000), @p123='?', @p124='?' (Size = 4000), @p125='?' (Size = 4000), @p126='?', @p127='?' (Size = 4000), @p128='?', @p129='?' (Size = 4000), @p130='?' (Size = 4000), @p131='?', @p132='?' (Size = 4000), @p133='?', @p134='?' (Size = 4000), @p135='?' (Size = 4000), @p136='?', @p137='?' (Size = 4000), @p138='?', @p139='?' (Size = 4000), @p140='?' (Size = 4000), @p141='?', @p142='?' (Size = 4000), @p143='?', @p144='?' (Size = 4000), @p145='?' (Size = 4000), @p146='?', @p147='?' (Size = 4000), @p148='?', @p149='?' (Size = 4000), @p150='?' (Size = 4000), @p151='?', @p152='?' (Size = 4000), @p153='?', @p154='?' (Size = 4000), @p155='?' (Size = 4000), @p156='?', @p157='?' (Size = 4000), @p158='?', @p159='?' (Size = 4000), @p160='?' (Size = 4000), @p161='?', @p162='?' (Size = 4000), @p163='?', @p164='?' (Size = 4000), @p165='?' (Size = 4000), @p166='?', @p167='?' (Size = 4000), @p168='?', @p169='?' (Size = 4000), @p170='?' (Size = 4000), @p171='?', @p172='?' (Size = 4000), @p173='?', @p174='?' (Size = 4000), @p175='?' (Size = 4000), @p176='?', @p177='?' (Size = 4000), @p178='?', @p179='?' (Size = 4000), @p180='?' (Size = 4000), @p181='?', @p182='?' (Size = 4000), @p183='?', @p184='?' (Size = 4000), @p185='?' (Size = 4000), @p186='?', @p187='?' (Size = 4000), @p188='?', @p189='?' (Size = 4000), @p190='?' (Size = 4000), @p191='?', @p192='?' (Size = 4000), @p193='?', @p194='?' (Size = 4000), @p195='?' (Size = 4000), @p196='?', @p197='?' (Size = 4000), @p198='?', @p199='?' (Size = 4000), @p200='?' (Size = 4000), @p201='?', @p202='?' (Size = 4000), @p203='?', @p204='?' (Size = 4000), @p205='?' (Size = 4000), @p206='?', @p207='?' (Size = 4000), @p208='?', @p209='?' (Size = 4000), @p210='?' (Size = 4000), @p211='?', @p212='?' (Size = 4000), @p213='?', @p214='?' (Size = 4000), @p215='?' (Size = 4000), @p216='?', @p217='?' (Size = 4000), @p218='?', @p219='?' (Size = 4000), @p220='?' (Size = 4000), @p221='?', @p222='?' (Size = 4000), @p223='?', @p224='?' (Size = 4000), @p225='?' (Size = 4000), @p226='?', @p227='?' (Size = 4000), @p228='?', @p229='?' (Size = 4000), @p230='?' (Size = 4000), @p231='?', @p232='?' (Size = 4000), @p233='?', @p234='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19),
+(@p100, @p101, @p102, @p103, @p104, 20),
+(@p105, @p106, @p107, @p108, @p109, 21),
+(@p110, @p111, @p112, @p113, @p114, 22),
+(@p115, @p116, @p117, @p118, @p119, 23),
+(@p120, @p121, @p122, @p123, @p124, 24),
+(@p125, @p126, @p127, @p128, @p129, 25),
+(@p130, @p131, @p132, @p133, @p134, 26),
+(@p135, @p136, @p137, @p138, @p139, 27),
+(@p140, @p141, @p142, @p143, @p144, 28),
+(@p145, @p146, @p147, @p148, @p149, 29),
+(@p150, @p151, @p152, @p153, @p154, 30),
+(@p155, @p156, @p157, @p158, @p159, 31),
+(@p160, @p161, @p162, @p163, @p164, 32),
+(@p165, @p166, @p167, @p168, @p169, 33),
+(@p170, @p171, @p172, @p173, @p174, 34),
+(@p175, @p176, @p177, @p178, @p179, 35),
+(@p180, @p181, @p182, @p183, @p184, 36),
+(@p185, @p186, @p187, @p188, @p189, 37),
+(@p190, @p191, @p192, @p193, @p194, 38),
+(@p195, @p196, @p197, @p198, @p199, 39),
+(@p200, @p201, @p202, @p203, @p204, 40),
+(@p205, @p206, @p207, @p208, @p209, 41),
+(@p210, @p211, @p212, @p213, @p214, 42),
+(@p215, @p216, @p217, @p218, @p219, 43),
+(@p220, @p221, @p222, @p223, @p224, 44),
+(@p225, @p226, @p227, @p228, @p229, 45),
+(@p230, @p231, @p232, @p233, @p234, 46)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executed DbCommand (37ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (72ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing HttpStatusCodeResult, setting HTTP status code 200
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 146593.6057ms
+Request finished in 147600.5017ms 200 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1025.489ms 200 
+Request finished in 2037.866ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/favicon.ico  
+Request finished in 160.9319ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (218ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (220ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (15ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 3870.1162ms 200 
+Request finished in 11757.0535ms 404 
+An error occurred using the connection to database 'cmsdb' on server '(LocalDB)\MSSQLLocalDB'.
+An exception occurred in the database while iterating the results of a query for context type 'CMS.Models.Feeds.FeedsContext'.
+System.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=43740; handshake=12;  ---> System.ComponentModel.Win32Exception (0x80004005): Время ожидания операции истекло
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:c7f6516d-18eb-4143-ac7c-53febcb784a8
+Error Number:-2,State:0,Class:11
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (314ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (33ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (20ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+An exception occurred in the database while iterating the results of a query for context type 'CMS.Models.Feeds.FeedsContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FeedsContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.BeginTrackingQuery()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1250.2878ms 200 
+Request finished in 2111.1438ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (261ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (163ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (11ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (77ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+No migrations were applied. The database is already up to date.
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 3847.4375ms 200 
+Request finished in 9965.3423ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/favicon.ico  
+Request finished in 71.0036ms 404 
+Executed DbCommand (166ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[Id], [f].[FeedType], [f].[Url]
+FROM [Feeds] AS [f]
+An exception occurred in the database while iterating the results of a query for context type 'CMS.Models.Feeds.FeedsContext'.
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'FeedsContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.UnbufferedEntityShaper`1.Shape(QueryContext queryContext, ValueBuffer valueBuffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (192ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (14ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (37ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 422.1911ms 200 
+Request finished in 1207.9287ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (229ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (71ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (56ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 26988.6337ms
+An unhandled exception has occurred while executing the request
+Request finished in 29967.2816ms 500 text/html; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (111ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (64ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 99
+Request finished in 936.3274ms 200 
+Request finished in 2703.8098ms 404 
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (289ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (114ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (47ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executed DbCommand (400ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p101='?', @p102='?' (Size = 4000), @p103='?', @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?', @p107='?' (Size = 4000), @p108='?', @p109='?' (Size = 4000), @p110='?' (Size = 4000), @p111='?', @p112='?' (Size = 4000), @p113='?', @p114='?' (Size = 4000), @p115='?' (Size = 4000), @p116='?', @p117='?' (Size = 4000), @p118='?', @p119='?' (Size = 4000), @p120='?' (Size = 4000), @p121='?', @p122='?' (Size = 4000), @p123='?', @p124='?' (Size = 4000), @p125='?' (Size = 4000), @p126='?', @p127='?' (Size = 4000), @p128='?', @p129='?' (Size = 4000), @p130='?' (Size = 4000), @p131='?', @p132='?' (Size = 4000), @p133='?', @p134='?' (Size = 4000), @p135='?' (Size = 4000), @p136='?', @p137='?' (Size = 4000), @p138='?', @p139='?' (Size = 4000), @p140='?' (Size = 4000), @p141='?', @p142='?' (Size = 4000), @p143='?', @p144='?' (Size = 4000), @p145='?' (Size = 4000), @p146='?', @p147='?' (Size = 4000), @p148='?', @p149='?' (Size = 4000), @p150='?' (Size = 4000), @p151='?', @p152='?' (Size = 4000), @p153='?', @p154='?' (Size = 4000), @p155='?' (Size = 4000), @p156='?', @p157='?' (Size = 4000), @p158='?', @p159='?' (Size = 4000), @p160='?' (Size = 4000), @p161='?', @p162='?' (Size = 4000), @p163='?', @p164='?' (Size = 4000), @p165='?' (Size = 4000), @p166='?', @p167='?' (Size = 4000), @p168='?', @p169='?' (Size = 4000), @p170='?' (Size = 4000), @p171='?', @p172='?' (Size = 4000), @p173='?', @p174='?' (Size = 4000), @p175='?' (Size = 4000), @p176='?', @p177='?' (Size = 4000), @p178='?', @p179='?' (Size = 4000), @p180='?' (Size = 4000), @p181='?', @p182='?' (Size = 4000), @p183='?', @p184='?' (Size = 4000), @p185='?' (Size = 4000), @p186='?', @p187='?' (Size = 4000), @p188='?', @p189='?' (Size = 4000), @p190='?' (Size = 4000), @p191='?', @p192='?' (Size = 4000), @p193='?', @p194='?' (Size = 4000), @p195='?' (Size = 4000), @p196='?', @p197='?' (Size = 4000), @p198='?', @p199='?' (Size = 4000), @p200='?' (Size = 4000), @p201='?', @p202='?' (Size = 4000), @p203='?', @p204='?' (Size = 4000), @p205='?' (Size = 4000), @p206='?', @p207='?' (Size = 4000), @p208='?', @p209='?' (Size = 4000), @p210='?' (Size = 4000), @p211='?', @p212='?' (Size = 4000), @p213='?', @p214='?' (Size = 4000), @p215='?' (Size = 4000), @p216='?', @p217='?' (Size = 4000), @p218='?', @p219='?' (Size = 4000), @p220='?' (Size = 4000), @p221='?', @p222='?' (Size = 4000), @p223='?', @p224='?' (Size = 4000), @p225='?' (Size = 4000), @p226='?', @p227='?' (Size = 4000), @p228='?', @p229='?' (Size = 4000), @p230='?' (Size = 4000), @p231='?', @p232='?' (Size = 4000), @p233='?', @p234='?' (Size = 4000), @p235='?' (Size = 4000), @p236='?', @p237='?' (Size = 4000), @p238='?', @p239='?' (Size = 4000), @p240='?' (Size = 4000), @p241='?', @p242='?' (Size = 4000), @p243='?', @p244='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19),
+(@p100, @p101, @p102, @p103, @p104, 20),
+(@p105, @p106, @p107, @p108, @p109, 21),
+(@p110, @p111, @p112, @p113, @p114, 22),
+(@p115, @p116, @p117, @p118, @p119, 23),
+(@p120, @p121, @p122, @p123, @p124, 24),
+(@p125, @p126, @p127, @p128, @p129, 25),
+(@p130, @p131, @p132, @p133, @p134, 26),
+(@p135, @p136, @p137, @p138, @p139, 27),
+(@p140, @p141, @p142, @p143, @p144, 28),
+(@p145, @p146, @p147, @p148, @p149, 29),
+(@p150, @p151, @p152, @p153, @p154, 30),
+(@p155, @p156, @p157, @p158, @p159, 31),
+(@p160, @p161, @p162, @p163, @p164, 32),
+(@p165, @p166, @p167, @p168, @p169, 33),
+(@p170, @p171, @p172, @p173, @p174, 34),
+(@p175, @p176, @p177, @p178, @p179, 35),
+(@p180, @p181, @p182, @p183, @p184, 36),
+(@p185, @p186, @p187, @p188, @p189, 37),
+(@p190, @p191, @p192, @p193, @p194, 38),
+(@p195, @p196, @p197, @p198, @p199, 39),
+(@p200, @p201, @p202, @p203, @p204, 40),
+(@p205, @p206, @p207, @p208, @p209, 41),
+(@p210, @p211, @p212, @p213, @p214, 42),
+(@p215, @p216, @p217, @p218, @p219, 43),
+(@p220, @p221, @p222, @p223, @p224, 44),
+(@p225, @p226, @p227, @p228, @p229, 45),
+(@p230, @p231, @p232, @p233, @p234, 46),
+(@p235, @p236, @p237, @p238, @p239, 47),
+(@p240, @p241, @p242, @p243, @p244, 48)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 105704.072ms
+Request finished in 109831.7866ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 15.8174ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (34ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 1651.0353ms
+Request finished in 2406.6698ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 131941.5059ms
+Request finished in 132388.4668ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (5ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 431.6148ms 200 
+Request finished in 1204.8356ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (537ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (174ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 25415.9174ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHEKARSMD", Request id "0HLLJHEKARSMD:00000002": An unhandled exception was thrown by the application.
+Request finished in 31717.0041ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 786.5469ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHEKARSME", Request id "0HLLJHEKARSME:00000002": An unhandled exception was thrown by the application.
+Request finished in 4798.2621ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (66ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 747.5706ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHEKARSMF", Request id "0HLLJHEKARSMF:00000001": An unhandled exception was thrown by the application.
+Request finished in 4672.6069ms 200 application/json; charset=utf-8
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1344.3728ms 200 
+Request finished in 2977.5179ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/favicon.ico  
+Request finished in 420.4989ms 0 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (707ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (157ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5078.8985ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHHKT32LN", Request id "0HLLJHHKT32LN:00000001": An unhandled exception was thrown by the application.
+Request finished in 9670.0176ms 200 application/json; charset=utf-8
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1458.4415ms 200 
+Request finished in 3513.041ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (710ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (101ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5799.3107ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHNEPF62O", Request id "0HLLJHNEPF62O:00000002": An unhandled exception was thrown by the application.
+Request finished in 8535.2862ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (91ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 1570.4595ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHNEPF62P", Request id "0HLLJHNEPF62P:00000002": An unhandled exception was thrown by the application.
+Request finished in 5964.5968ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (44ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 831.2347ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHNEPF62Q", Request id "0HLLJHNEPF62Q:00000001": An unhandled exception was thrown by the application.
+Request finished in 6622.7406ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1576.2208ms 200 
+Request finished in 3036.0798ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (348ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (126ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5814.1854ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHRJS3J6T", Request id "0HLLJHRJS3J6T:00000002": An unhandled exception was thrown by the application.
+Request finished in 11218.1301ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1465.7087ms 200 
+Request finished in 3369.8122ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (309ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (121ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 4943.1579ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJHU9HQD9V", Request id "0HLLJHU9HQD9V:00000002": An unhandled exception was thrown by the application.
+Request finished in 11495.9648ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1549.1145ms 200 
+Request finished in 2698.9796ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (325ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (207ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing JsonResult, writing value System.Collections.Generic.List`1[CMS.Models.Feeds.NewsItem].
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 14190.3187ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJI1I987GP", Request id "0HLLJI1I987GP:00000002": An unhandled exception was thrown by the application.
+Request finished in 18854.7725ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (5ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing JsonResult, writing value System.Collections.Generic.List`1[CMS.Models.Feeds.NewsItem].
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 1115.918ms
+An unhandled exception has occurred while executing the request
+The response has already started, the error page middleware will not be executed.
+Connection id "0HLLJI1I987GR", Request id "0HLLJI1I987GR:00000001": An unhandled exception was thrown by the application.
+Request finished in 2461.293ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (14ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 469.9341ms 200 
+Request finished in 2652.1329ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (171ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 41994.9596ms
+Request finished in 45150.6081ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1048.8618ms 200 
+Request finished in 3189.6578ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 85
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (245ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (97ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (16ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executed DbCommand (329ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p101='?', @p102='?' (Size = 4000), @p103='?', @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?', @p107='?' (Size = 4000), @p108='?', @p109='?' (Size = 4000), @p110='?' (Size = 4000), @p111='?', @p112='?' (Size = 4000), @p113='?', @p114='?' (Size = 4000), @p115='?' (Size = 4000), @p116='?', @p117='?' (Size = 4000), @p118='?', @p119='?' (Size = 4000), @p120='?' (Size = 4000), @p121='?', @p122='?' (Size = 4000), @p123='?', @p124='?' (Size = 4000), @p125='?' (Size = 4000), @p126='?', @p127='?' (Size = 4000), @p128='?', @p129='?' (Size = 4000), @p130='?' (Size = 4000), @p131='?', @p132='?' (Size = 4000), @p133='?', @p134='?' (Size = 4000), @p135='?' (Size = 4000), @p136='?', @p137='?' (Size = 4000), @p138='?', @p139='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19),
+(@p100, @p101, @p102, @p103, @p104, 20),
+(@p105, @p106, @p107, @p108, @p109, 21),
+(@p110, @p111, @p112, @p113, @p114, 22),
+(@p115, @p116, @p117, @p118, @p119, 23),
+(@p120, @p121, @p122, @p123, @p124, 24),
+(@p125, @p126, @p127, @p128, @p129, 25),
+(@p130, @p131, @p132, @p133, @p134, 26),
+(@p135, @p136, @p137, @p138, @p139, 27)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 16436.6575ms
+Request finished in 17533.8514ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (39ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (137ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 2693.3359ms
+Request finished in 3095.703ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 1801.8945ms
+Request finished in 3108.4645ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 104
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (14ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (18ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (89ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 6121.17ms
+Request finished in 6430.8567ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 1317.8856ms
+Request finished in 2532.5951ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 837.5455ms 200 
+Request finished in 3334.8528ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 104
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (674ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (532ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (29ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 22591.382ms
+Request finished in 24642.4573ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (9ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (273ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5630.1972ms
+Request finished in 6835.1679ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 104
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (2ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (1ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 30810.5048ms
+Request finished in 30985.502ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 104
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1306.1057ms 200 
+Request finished in 3056.8539ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/favicon.ico  
+Request finished in 408.8761ms 404 
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (242ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (150ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (1ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 89
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 209090.2694ms
+Request finished in 216520.6264ms 200 text/plain; charset=utf-8
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (65ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (26ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (5ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executed DbCommand (673ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p101='?', @p102='?' (Size = 4000), @p103='?', @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?', @p107='?' (Size = 4000), @p108='?', @p109='?' (Size = 4000), @p110='?' (Size = 4000), @p111='?', @p112='?' (Size = 4000), @p113='?', @p114='?' (Size = 4000), @p115='?' (Size = 4000), @p116='?', @p117='?' (Size = 4000), @p118='?', @p119='?' (Size = 4000), @p120='?' (Size = 4000), @p121='?', @p122='?' (Size = 4000), @p123='?', @p124='?' (Size = 4000), @p125='?' (Size = 4000), @p126='?', @p127='?' (Size = 4000), @p128='?', @p129='?' (Size = 4000), @p130='?' (Size = 4000), @p131='?', @p132='?' (Size = 4000), @p133='?', @p134='?' (Size = 4000), @p135='?' (Size = 4000), @p136='?', @p137='?' (Size = 4000), @p138='?', @p139='?' (Size = 4000), @p140='?' (Size = 4000), @p141='?', @p142='?' (Size = 4000), @p143='?', @p144='?' (Size = 4000), @p145='?' (Size = 4000), @p146='?', @p147='?' (Size = 4000), @p148='?', @p149='?' (Size = 4000), @p150='?' (Size = 4000), @p151='?', @p152='?' (Size = 4000), @p153='?', @p154='?' (Size = 4000), @p155='?' (Size = 4000), @p156='?', @p157='?' (Size = 4000), @p158='?', @p159='?' (Size = 4000), @p160='?' (Size = 4000), @p161='?', @p162='?' (Size = 4000), @p163='?', @p164='?' (Size = 4000), @p165='?' (Size = 4000), @p166='?', @p167='?' (Size = 4000), @p168='?', @p169='?' (Size = 4000), @p170='?' (Size = 4000), @p171='?', @p172='?' (Size = 4000), @p173='?', @p174='?' (Size = 4000), @p175='?' (Size = 4000), @p176='?', @p177='?' (Size = 4000), @p178='?', @p179='?' (Size = 4000), @p180='?' (Size = 4000), @p181='?', @p182='?' (Size = 4000), @p183='?', @p184='?' (Size = 4000), @p185='?' (Size = 4000), @p186='?', @p187='?' (Size = 4000), @p188='?', @p189='?' (Size = 4000), @p190='?' (Size = 4000), @p191='?', @p192='?' (Size = 4000), @p193='?', @p194='?' (Size = 4000), @p195='?' (Size = 4000), @p196='?', @p197='?' (Size = 4000), @p198='?', @p199='?' (Size = 4000), @p200='?' (Size = 4000), @p201='?', @p202='?' (Size = 4000), @p203='?', @p204='?' (Size = 4000), @p205='?' (Size = 4000), @p206='?', @p207='?' (Size = 4000), @p208='?', @p209='?' (Size = 4000), @p210='?' (Size = 4000), @p211='?', @p212='?' (Size = 4000), @p213='?', @p214='?' (Size = 4000), @p215='?' (Size = 4000), @p216='?', @p217='?' (Size = 4000), @p218='?', @p219='?' (Size = 4000), @p220='?' (Size = 4000), @p221='?', @p222='?' (Size = 4000), @p223='?', @p224='?' (Size = 4000), @p225='?' (Size = 4000), @p226='?', @p227='?' (Size = 4000), @p228='?', @p229='?' (Size = 4000), @p230='?' (Size = 4000), @p231='?', @p232='?' (Size = 4000), @p233='?', @p234='?' (Size = 4000), @p235='?' (Size = 4000), @p236='?', @p237='?' (Size = 4000), @p238='?', @p239='?' (Size = 4000), @p240='?' (Size = 4000), @p241='?', @p242='?' (Size = 4000), @p243='?', @p244='?' (Size = 4000), @p245='?' (Size = 4000), @p246='?', @p247='?' (Size = 4000), @p248='?', @p249='?' (Size = 4000), @p250='?' (Size = 4000), @p251='?', @p252='?' (Size = 4000), @p253='?', @p254='?' (Size = 4000), @p255='?' (Size = 4000), @p256='?', @p257='?' (Size = 4000), @p258='?', @p259='?' (Size = 4000), @p260='?' (Size = 4000), @p261='?', @p262='?' (Size = 4000), @p263='?', @p264='?' (Size = 4000), @p265='?' (Size = 4000), @p266='?', @p267='?' (Size = 4000), @p268='?', @p269='?' (Size = 4000), @p270='?' (Size = 4000), @p271='?', @p272='?' (Size = 4000), @p273='?', @p274='?' (Size = 4000), @p275='?' (Size = 4000), @p276='?', @p277='?' (Size = 4000), @p278='?', @p279='?' (Size = 4000), @p280='?' (Size = 4000), @p281='?', @p282='?' (Size = 4000), @p283='?', @p284='?' (Size = 4000), @p285='?' (Size = 4000), @p286='?', @p287='?' (Size = 4000), @p288='?', @p289='?' (Size = 4000), @p290='?' (Size = 4000), @p291='?', @p292='?' (Size = 4000), @p293='?', @p294='?' (Size = 4000), @p295='?' (Size = 4000), @p296='?', @p297='?' (Size = 4000), @p298='?', @p299='?' (Size = 4000), @p300='?' (Size = 4000), @p301='?', @p302='?' (Size = 4000), @p303='?', @p304='?' (Size = 4000), @p305='?' (Size = 4000), @p306='?', @p307='?' (Size = 4000), @p308='?', @p309='?' (Size = 4000), @p310='?' (Size = 4000), @p311='?', @p312='?' (Size = 4000), @p313='?', @p314='?' (Size = 4000), @p315='?' (Size = 4000), @p316='?', @p317='?' (Size = 4000), @p318='?', @p319='?' (Size = 4000), @p320='?' (Size = 4000), @p321='?', @p322='?' (Size = 4000), @p323='?', @p324='?' (Size = 4000), @p325='?' (Size = 4000), @p326='?', @p327='?' (Size = 4000), @p328='?', @p329='?' (Size = 4000), @p330='?' (Size = 4000), @p331='?', @p332='?' (Size = 4000), @p333='?', @p334='?' (Size = 4000), @p335='?' (Size = 4000), @p336='?', @p337='?' (Size = 4000), @p338='?', @p339='?' (Size = 4000), @p340='?' (Size = 4000), @p341='?', @p342='?' (Size = 4000), @p343='?', @p344='?' (Size = 4000), @p345='?' (Size = 4000), @p346='?', @p347='?' (Size = 4000), @p348='?', @p349='?' (Size = 4000), @p350='?' (Size = 4000), @p351='?', @p352='?' (Size = 4000), @p353='?', @p354='?' (Size = 4000), @p355='?' (Size = 4000), @p356='?', @p357='?' (Size = 4000), @p358='?', @p359='?' (Size = 4000), @p360='?' (Size = 4000), @p361='?', @p362='?' (Size = 4000), @p363='?', @p364='?' (Size = 4000), @p365='?' (Size = 4000), @p366='?', @p367='?' (Size = 4000), @p368='?', @p369='?' (Size = 4000), @p370='?' (Size = 4000), @p371='?', @p372='?' (Size = 4000), @p373='?', @p374='?' (Size = 4000), @p375='?' (Size = 4000), @p376='?', @p377='?' (Size = 4000), @p378='?', @p379='?' (Size = 4000), @p380='?' (Size = 4000), @p381='?', @p382='?' (Size = 4000), @p383='?', @p384='?' (Size = 4000), @p385='?' (Size = 4000), @p386='?', @p387='?' (Size = 4000), @p388='?', @p389='?' (Size = 4000), @p390='?' (Size = 4000), @p391='?', @p392='?' (Size = 4000), @p393='?', @p394='?' (Size = 4000), @p395='?' (Size = 4000), @p396='?', @p397='?' (Size = 4000), @p398='?', @p399='?' (Size = 4000), @p400='?' (Size = 4000), @p401='?', @p402='?' (Size = 4000), @p403='?', @p404='?' (Size = 4000), @p405='?' (Size = 4000), @p406='?', @p407='?' (Size = 4000), @p408='?', @p409='?' (Size = 4000), @p410='?' (Size = 4000), @p411='?', @p412='?' (Size = 4000), @p413='?', @p414='?' (Size = 4000), @p415='?' (Size = 4000), @p416='?', @p417='?' (Size = 4000), @p418='?', @p419='?' (Size = 4000), @p420='?' (Size = 4000), @p421='?', @p422='?' (Size = 4000), @p423='?', @p424='?' (Size = 4000), @p425='?' (Size = 4000), @p426='?', @p427='?' (Size = 4000), @p428='?', @p429='?' (Size = 4000), @p430='?' (Size = 4000), @p431='?', @p432='?' (Size = 4000), @p433='?', @p434='?' (Size = 4000), @p435='?' (Size = 4000), @p436='?', @p437='?' (Size = 4000), @p438='?', @p439='?' (Size = 4000), @p440='?' (Size = 4000), @p441='?', @p442='?' (Size = 4000), @p443='?', @p444='?' (Size = 4000), @p445='?' (Size = 4000), @p446='?', @p447='?' (Size = 4000), @p448='?', @p449='?' (Size = 4000), @p450='?' (Size = 4000), @p451='?', @p452='?' (Size = 4000), @p453='?', @p454='?' (Size = 4000), @p455='?' (Size = 4000), @p456='?', @p457='?' (Size = 4000), @p458='?', @p459='?' (Size = 4000), @p460='?' (Size = 4000), @p461='?', @p462='?' (Size = 4000), @p463='?', @p464='?' (Size = 4000), @p465='?' (Size = 4000), @p466='?', @p467='?' (Size = 4000), @p468='?', @p469='?' (Size = 4000), @p470='?' (Size = 4000), @p471='?', @p472='?' (Size = 4000), @p473='?', @p474='?' (Size = 4000), @p475='?' (Size = 4000), @p476='?', @p477='?' (Size = 4000), @p478='?', @p479='?' (Size = 4000), @p480='?' (Size = 4000), @p481='?', @p482='?' (Size = 4000), @p483='?', @p484='?' (Size = 4000), @p485='?' (Size = 4000), @p486='?', @p487='?' (Size = 4000), @p488='?', @p489='?' (Size = 4000), @p490='?' (Size = 4000), @p491='?', @p492='?' (Size = 4000), @p493='?', @p494='?' (Size = 4000), @p495='?' (Size = 4000), @p496='?', @p497='?' (Size = 4000), @p498='?', @p499='?' (Size = 4000), @p500='?' (Size = 4000), @p501='?', @p502='?' (Size = 4000), @p503='?', @p504='?' (Size = 4000), @p505='?' (Size = 4000), @p506='?', @p507='?' (Size = 4000), @p508='?', @p509='?' (Size = 4000), @p510='?' (Size = 4000), @p511='?', @p512='?' (Size = 4000), @p513='?', @p514='?' (Size = 4000), @p515='?' (Size = 4000), @p516='?', @p517='?' (Size = 4000), @p518='?', @p519='?' (Size = 4000), @p520='?' (Size = 4000), @p521='?', @p522='?' (Size = 4000), @p523='?', @p524='?' (Size = 4000), @p525='?' (Size = 4000), @p526='?', @p527='?' (Size = 4000), @p528='?', @p529='?' (Size = 4000), @p530='?' (Size = 4000), @p531='?', @p532='?' (Size = 4000), @p533='?', @p534='?' (Size = 4000), @p535='?' (Size = 4000), @p536='?', @p537='?' (Size = 4000), @p538='?', @p539='?' (Size = 4000), @p540='?' (Size = 4000), @p541='?', @p542='?' (Size = 4000), @p543='?', @p544='?' (Size = 4000), @p545='?' (Size = 4000), @p546='?', @p547='?' (Size = 4000), @p548='?', @p549='?' (Size = 4000), @p550='?' (Size = 4000), @p551='?', @p552='?' (Size = 4000), @p553='?', @p554='?' (Size = 4000), @p555='?' (Size = 4000), @p556='?', @p557='?' (Size = 4000), @p558='?', @p559='?' (Size = 4000), @p560='?' (Size = 4000), @p561='?', @p562='?' (Size = 4000), @p563='?', @p564='?' (Size = 4000), @p565='?' (Size = 4000), @p566='?', @p567='?' (Size = 4000), @p568='?', @p569='?' (Size = 4000), @p570='?' (Size = 4000), @p571='?', @p572='?' (Size = 4000), @p573='?', @p574='?' (Size = 4000), @p575='?' (Size = 4000), @p576='?', @p577='?' (Size = 4000), @p578='?', @p579='?' (Size = 4000), @p580='?' (Size = 4000), @p581='?', @p582='?' (Size = 4000), @p583='?', @p584='?' (Size = 4000), @p585='?' (Size = 4000), @p586='?', @p587='?' (Size = 4000), @p588='?', @p589='?' (Size = 4000), @p590='?' (Size = 4000), @p591='?', @p592='?' (Size = 4000), @p593='?', @p594='?' (Size = 4000), @p595='?' (Size = 4000), @p596='?', @p597='?' (Size = 4000), @p598='?', @p599='?' (Size = 4000), @p600='?' (Size = 4000), @p601='?', @p602='?' (Size = 4000), @p603='?', @p604='?' (Size = 4000), @p605='?' (Size = 4000), @p606='?', @p607='?' (Size = 4000), @p608='?', @p609='?' (Size = 4000), @p610='?' (Size = 4000), @p611='?', @p612='?' (Size = 4000), @p613='?', @p614='?' (Size = 4000), @p615='?' (Size = 4000), @p616='?', @p617='?' (Size = 4000), @p618='?', @p619='?' (Size = 4000), @p620='?' (Size = 4000), @p621='?', @p622='?' (Size = 4000), @p623='?', @p624='?' (Size = 4000), @p625='?' (Size = 4000), @p626='?', @p627='?' (Size = 4000), @p628='?', @p629='?' (Size = 4000), @p630='?' (Size = 4000), @p631='?', @p632='?' (Size = 4000), @p633='?', @p634='?' (Size = 4000), @p635='?' (Size = 4000), @p636='?', @p637='?' (Size = 4000), @p638='?', @p639='?' (Size = 4000), @p640='?' (Size = 4000), @p641='?', @p642='?' (Size = 4000), @p643='?', @p644='?' (Size = 4000), @p645='?' (Size = 4000), @p646='?', @p647='?' (Size = 4000), @p648='?', @p649='?' (Size = 4000), @p650='?' (Size = 4000), @p651='?', @p652='?' (Size = 4000), @p653='?', @p654='?' (Size = 4000), @p655='?' (Size = 4000), @p656='?', @p657='?' (Size = 4000), @p658='?', @p659='?' (Size = 4000), @p660='?' (Size = 4000), @p661='?', @p662='?' (Size = 4000), @p663='?', @p664='?' (Size = 4000), @p665='?' (Size = 4000), @p666='?', @p667='?' (Size = 4000), @p668='?', @p669='?' (Size = 4000), @p670='?' (Size = 4000), @p671='?', @p672='?' (Size = 4000), @p673='?', @p674='?' (Size = 4000), @p675='?' (Size = 4000), @p676='?', @p677='?' (Size = 4000), @p678='?', @p679='?' (Size = 4000), @p680='?' (Size = 4000), @p681='?', @p682='?' (Size = 4000), @p683='?', @p684='?' (Size = 4000), @p685='?' (Size = 4000), @p686='?', @p687='?' (Size = 4000), @p688='?', @p689='?' (Size = 4000), @p690='?' (Size = 4000), @p691='?', @p692='?' (Size = 4000), @p693='?', @p694='?' (Size = 4000), @p695='?' (Size = 4000), @p696='?', @p697='?' (Size = 4000), @p698='?', @p699='?' (Size = 4000), @p700='?' (Size = 4000), @p701='?', @p702='?' (Size = 4000), @p703='?', @p704='?' (Size = 4000), @p705='?' (Size = 4000), @p706='?', @p707='?' (Size = 4000), @p708='?', @p709='?' (Size = 4000), @p710='?' (Size = 4000), @p711='?', @p712='?' (Size = 4000), @p713='?', @p714='?' (Size = 4000), @p715='?' (Size = 4000), @p716='?', @p717='?' (Size = 4000), @p718='?', @p719='?' (Size = 4000), @p720='?' (Size = 4000), @p721='?', @p722='?' (Size = 4000), @p723='?', @p724='?' (Size = 4000), @p725='?' (Size = 4000), @p726='?', @p727='?' (Size = 4000), @p728='?', @p729='?' (Size = 4000), @p730='?' (Size = 4000), @p731='?', @p732='?' (Size = 4000), @p733='?', @p734='?' (Size = 4000), @p735='?' (Size = 4000), @p736='?', @p737='?' (Size = 4000), @p738='?', @p739='?' (Size = 4000), @p740='?' (Size = 4000), @p741='?', @p742='?' (Size = 4000), @p743='?', @p744='?' (Size = 4000), @p745='?' (Size = 4000), @p746='?', @p747='?' (Size = 4000), @p748='?', @p749='?' (Size = 4000), @p750='?' (Size = 4000), @p751='?', @p752='?' (Size = 4000), @p753='?', @p754='?' (Size = 4000), @p755='?' (Size = 4000), @p756='?', @p757='?' (Size = 4000), @p758='?', @p759='?' (Size = 4000), @p760='?' (Size = 4000), @p761='?', @p762='?' (Size = 4000), @p763='?', @p764='?' (Size = 4000), @p765='?' (Size = 4000), @p766='?', @p767='?' (Size = 4000), @p768='?', @p769='?' (Size = 4000), @p770='?' (Size = 4000), @p771='?', @p772='?' (Size = 4000), @p773='?', @p774='?' (Size = 4000), @p775='?' (Size = 4000), @p776='?', @p777='?' (Size = 4000), @p778='?', @p779='?' (Size = 4000), @p780='?' (Size = 4000), @p781='?', @p782='?' (Size = 4000), @p783='?', @p784='?' (Size = 4000), @p785='?' (Size = 4000), @p786='?', @p787='?' (Size = 4000), @p788='?', @p789='?' (Size = 4000), @p790='?' (Size = 4000), @p791='?', @p792='?' (Size = 4000), @p793='?', @p794='?' (Size = 4000), @p795='?' (Size = 4000), @p796='?', @p797='?' (Size = 4000), @p798='?', @p799='?' (Size = 4000), @p800='?' (Size = 4000), @p801='?', @p802='?' (Size = 4000), @p803='?', @p804='?' (Size = 4000), @p805='?' (Size = 4000), @p806='?', @p807='?' (Size = 4000), @p808='?', @p809='?' (Size = 4000), @p810='?' (Size = 4000), @p811='?', @p812='?' (Size = 4000), @p813='?', @p814='?' (Size = 4000), @p815='?' (Size = 4000), @p816='?', @p817='?' (Size = 4000), @p818='?', @p819='?' (Size = 4000), @p820='?' (Size = 4000), @p821='?', @p822='?' (Size = 4000), @p823='?', @p824='?' (Size = 4000), @p825='?' (Size = 4000), @p826='?', @p827='?' (Size = 4000), @p828='?', @p829='?' (Size = 4000), @p830='?' (Size = 4000), @p831='?', @p832='?' (Size = 4000), @p833='?', @p834='?' (Size = 4000), @p835='?' (Size = 4000), @p836='?', @p837='?' (Size = 4000), @p838='?', @p839='?' (Size = 4000), @p840='?' (Size = 4000), @p841='?', @p842='?' (Size = 4000), @p843='?', @p844='?' (Size = 4000), @p845='?' (Size = 4000), @p846='?', @p847='?' (Size = 4000), @p848='?', @p849='?' (Size = 4000), @p850='?' (Size = 4000), @p851='?', @p852='?' (Size = 4000), @p853='?', @p854='?' (Size = 4000), @p855='?' (Size = 4000), @p856='?', @p857='?' (Size = 4000), @p858='?', @p859='?' (Size = 4000), @p860='?' (Size = 4000), @p861='?', @p862='?' (Size = 4000), @p863='?', @p864='?' (Size = 4000), @p865='?' (Size = 4000), @p866='?', @p867='?' (Size = 4000), @p868='?', @p869='?' (Size = 4000), @p870='?' (Size = 4000), @p871='?', @p872='?' (Size = 4000), @p873='?', @p874='?' (Size = 4000), @p875='?' (Size = 4000), @p876='?', @p877='?' (Size = 4000), @p878='?', @p879='?' (Size = 4000), @p880='?' (Size = 4000), @p881='?', @p882='?' (Size = 4000), @p883='?', @p884='?' (Size = 4000), @p885='?' (Size = 4000), @p886='?', @p887='?' (Size = 4000), @p888='?', @p889='?' (Size = 4000), @p890='?' (Size = 4000), @p891='?', @p892='?' (Size = 4000), @p893='?', @p894='?' (Size = 4000), @p895='?' (Size = 4000), @p896='?', @p897='?' (Size = 4000), @p898='?', @p899='?' (Size = 4000), @p900='?' (Size = 4000), @p901='?', @p902='?' (Size = 4000), @p903='?', @p904='?' (Size = 4000), @p905='?' (Size = 4000), @p906='?', @p907='?' (Size = 4000), @p908='?', @p909='?' (Size = 4000), @p910='?' (Size = 4000), @p911='?', @p912='?' (Size = 4000), @p913='?', @p914='?' (Size = 4000), @p915='?' (Size = 4000), @p916='?', @p917='?' (Size = 4000), @p918='?', @p919='?' (Size = 4000), @p920='?' (Size = 4000), @p921='?', @p922='?' (Size = 4000), @p923='?', @p924='?' (Size = 4000), @p925='?' (Size = 4000), @p926='?', @p927='?' (Size = 4000), @p928='?', @p929='?' (Size = 4000), @p930='?' (Size = 4000), @p931='?', @p932='?' (Size = 4000), @p933='?', @p934='?' (Size = 4000), @p935='?' (Size = 4000), @p936='?', @p937='?' (Size = 4000), @p938='?', @p939='?' (Size = 4000), @p940='?' (Size = 4000), @p941='?', @p942='?' (Size = 4000), @p943='?', @p944='?' (Size = 4000), @p945='?' (Size = 4000), @p946='?', @p947='?' (Size = 4000), @p948='?', @p949='?' (Size = 4000), @p950='?' (Size = 4000), @p951='?', @p952='?' (Size = 4000), @p953='?', @p954='?' (Size = 4000), @p955='?' (Size = 4000), @p956='?', @p957='?' (Size = 4000), @p958='?', @p959='?' (Size = 4000), @p960='?' (Size = 4000), @p961='?', @p962='?' (Size = 4000), @p963='?', @p964='?' (Size = 4000), @p965='?' (Size = 4000), @p966='?', @p967='?' (Size = 4000), @p968='?', @p969='?' (Size = 4000), @p970='?' (Size = 4000), @p971='?', @p972='?' (Size = 4000), @p973='?', @p974='?' (Size = 4000), @p975='?' (Size = 4000), @p976='?', @p977='?' (Size = 4000), @p978='?', @p979='?' (Size = 4000), @p980='?' (Size = 4000), @p981='?', @p982='?' (Size = 4000), @p983='?', @p984='?' (Size = 4000), @p985='?' (Size = 4000), @p986='?', @p987='?' (Size = 4000), @p988='?', @p989='?' (Size = 4000), @p990='?' (Size = 4000), @p991='?', @p992='?' (Size = 4000), @p993='?', @p994='?' (Size = 4000), @p995='?' (Size = 4000), @p996='?', @p997='?' (Size = 4000), @p998='?', @p999='?' (Size = 4000), @p1000='?' (Size = 4000), @p1001='?', @p1002='?' (Size = 4000), @p1003='?', @p1004='?' (Size = 4000), @p1005='?' (Size = 4000), @p1006='?', @p1007='?' (Size = 4000), @p1008='?', @p1009='?' (Size = 4000), @p1010='?' (Size = 4000), @p1011='?', @p1012='?' (Size = 4000), @p1013='?', @p1014='?' (Size = 4000), @p1015='?' (Size = 4000), @p1016='?', @p1017='?' (Size = 4000), @p1018='?', @p1019='?' (Size = 4000), @p1020='?' (Size = 4000), @p1021='?', @p1022='?' (Size = 4000), @p1023='?', @p1024='?' (Size = 4000), @p1025='?' (Size = 4000), @p1026='?', @p1027='?' (Size = 4000), @p1028='?', @p1029='?' (Size = 4000), @p1030='?' (Size = 4000), @p1031='?', @p1032='?' (Size = 4000), @p1033='?', @p1034='?' (Size = 4000), @p1035='?' (Size = 4000), @p1036='?', @p1037='?' (Size = 4000), @p1038='?', @p1039='?' (Size = 4000), @p1040='?' (Size = 4000), @p1041='?', @p1042='?' (Size = 4000), @p1043='?', @p1044='?' (Size = 4000), @p1045='?' (Size = 4000), @p1046='?', @p1047='?' (Size = 4000), @p1048='?', @p1049='?' (Size = 4000), @p1050='?' (Size = 4000), @p1051='?', @p1052='?' (Size = 4000), @p1053='?', @p1054='?' (Size = 4000), @p1055='?' (Size = 4000), @p1056='?', @p1057='?' (Size = 4000), @p1058='?', @p1059='?' (Size = 4000), @p1060='?' (Size = 4000), @p1061='?', @p1062='?' (Size = 4000), @p1063='?', @p1064='?' (Size = 4000), @p1065='?' (Size = 4000), @p1066='?', @p1067='?' (Size = 4000), @p1068='?', @p1069='?' (Size = 4000), @p1070='?' (Size = 4000), @p1071='?', @p1072='?' (Size = 4000), @p1073='?', @p1074='?' (Size = 4000), @p1075='?' (Size = 4000), @p1076='?', @p1077='?' (Size = 4000), @p1078='?', @p1079='?' (Size = 4000), @p1080='?' (Size = 4000), @p1081='?', @p1082='?' (Size = 4000), @p1083='?', @p1084='?' (Size = 4000), @p1085='?' (Size = 4000), @p1086='?', @p1087='?' (Size = 4000), @p1088='?', @p1089='?' (Size = 4000), @p1090='?' (Size = 4000), @p1091='?', @p1092='?' (Size = 4000), @p1093='?', @p1094='?' (Size = 4000), @p1095='?' (Size = 4000), @p1096='?', @p1097='?' (Size = 4000), @p1098='?', @p1099='?' (Size = 4000), @p1100='?' (Size = 4000), @p1101='?', @p1102='?' (Size = 4000), @p1103='?', @p1104='?' (Size = 4000), @p1105='?' (Size = 4000), @p1106='?', @p1107='?' (Size = 4000), @p1108='?', @p1109='?' (Size = 4000), @p1110='?' (Size = 4000), @p1111='?', @p1112='?' (Size = 4000), @p1113='?', @p1114='?' (Size = 4000), @p1115='?' (Size = 4000), @p1116='?', @p1117='?' (Size = 4000), @p1118='?', @p1119='?' (Size = 4000), @p1120='?' (Size = 4000), @p1121='?', @p1122='?' (Size = 4000), @p1123='?', @p1124='?' (Size = 4000), @p1125='?' (Size = 4000), @p1126='?', @p1127='?' (Size = 4000), @p1128='?', @p1129='?' (Size = 4000), @p1130='?' (Size = 4000), @p1131='?', @p1132='?' (Size = 4000), @p1133='?', @p1134='?' (Size = 4000), @p1135='?' (Size = 4000), @p1136='?', @p1137='?' (Size = 4000), @p1138='?', @p1139='?' (Size = 4000), @p1140='?' (Size = 4000), @p1141='?', @p1142='?' (Size = 4000), @p1143='?', @p1144='?' (Size = 4000), @p1145='?' (Size = 4000), @p1146='?', @p1147='?' (Size = 4000), @p1148='?', @p1149='?' (Size = 4000), @p1150='?' (Size = 4000), @p1151='?', @p1152='?' (Size = 4000), @p1153='?', @p1154='?' (Size = 4000), @p1155='?' (Size = 4000), @p1156='?', @p1157='?' (Size = 4000), @p1158='?', @p1159='?' (Size = 4000), @p1160='?' (Size = 4000), @p1161='?', @p1162='?' (Size = 4000), @p1163='?', @p1164='?' (Size = 4000), @p1165='?' (Size = 4000), @p1166='?', @p1167='?' (Size = 4000), @p1168='?', @p1169='?' (Size = 4000), @p1170='?' (Size = 4000), @p1171='?', @p1172='?' (Size = 4000), @p1173='?', @p1174='?' (Size = 4000), @p1175='?' (Size = 4000), @p1176='?', @p1177='?' (Size = 4000), @p1178='?', @p1179='?' (Size = 4000), @p1180='?' (Size = 4000), @p1181='?', @p1182='?' (Size = 4000), @p1183='?', @p1184='?' (Size = 4000), @p1185='?' (Size = 4000), @p1186='?', @p1187='?' (Size = 4000), @p1188='?', @p1189='?' (Size = 4000), @p1190='?' (Size = 4000), @p1191='?', @p1192='?' (Size = 4000), @p1193='?', @p1194='?' (Size = 4000), @p1195='?' (Size = 4000), @p1196='?', @p1197='?' (Size = 4000), @p1198='?', @p1199='?' (Size = 4000), @p1200='?' (Size = 4000), @p1201='?', @p1202='?' (Size = 4000), @p1203='?', @p1204='?' (Size = 4000), @p1205='?' (Size = 4000), @p1206='?', @p1207='?' (Size = 4000), @p1208='?', @p1209='?' (Size = 4000), @p1210='?' (Size = 4000), @p1211='?', @p1212='?' (Size = 4000), @p1213='?', @p1214='?' (Size = 4000), @p1215='?' (Size = 4000), @p1216='?', @p1217='?' (Size = 4000), @p1218='?', @p1219='?' (Size = 4000), @p1220='?' (Size = 4000), @p1221='?', @p1222='?' (Size = 4000), @p1223='?', @p1224='?' (Size = 4000), @p1225='?' (Size = 4000), @p1226='?', @p1227='?' (Size = 4000), @p1228='?', @p1229='?' (Size = 4000), @p1230='?' (Size = 4000), @p1231='?', @p1232='?' (Size = 4000), @p1233='?', @p1234='?' (Size = 4000), @p1235='?' (Size = 4000), @p1236='?', @p1237='?' (Size = 4000), @p1238='?', @p1239='?' (Size = 4000), @p1240='?' (Size = 4000), @p1241='?', @p1242='?' (Size = 4000), @p1243='?', @p1244='?' (Size = 4000), @p1245='?' (Size = 4000), @p1246='?', @p1247='?' (Size = 4000), @p1248='?', @p1249='?' (Size = 4000), @p1250='?' (Size = 4000), @p1251='?', @p1252='?' (Size = 4000), @p1253='?', @p1254='?' (Size = 4000), @p1255='?' (Size = 4000), @p1256='?', @p1257='?' (Size = 4000), @p1258='?', @p1259='?' (Size = 4000), @p1260='?' (Size = 4000), @p1261='?', @p1262='?' (Size = 4000), @p1263='?', @p1264='?' (Size = 4000), @p1265='?' (Size = 4000), @p1266='?', @p1267='?' (Size = 4000), @p1268='?', @p1269='?' (Size = 4000), @p1270='?' (Size = 4000), @p1271='?', @p1272='?' (Size = 4000), @p1273='?', @p1274='?' (Size = 4000), @p1275='?' (Size = 4000), @p1276='?', @p1277='?' (Size = 4000), @p1278='?', @p1279='?' (Size = 4000), @p1280='?' (Size = 4000), @p1281='?', @p1282='?' (Size = 4000), @p1283='?', @p1284='?' (Size = 4000), @p1285='?' (Size = 4000), @p1286='?', @p1287='?' (Size = 4000), @p1288='?', @p1289='?' (Size = 4000), @p1290='?' (Size = 4000), @p1291='?', @p1292='?' (Size = 4000), @p1293='?', @p1294='?' (Size = 4000), @p1295='?' (Size = 4000), @p1296='?', @p1297='?' (Size = 4000), @p1298='?', @p1299='?' (Size = 4000), @p1300='?' (Size = 4000), @p1301='?', @p1302='?' (Size = 4000), @p1303='?', @p1304='?' (Size = 4000), @p1305='?' (Size = 4000), @p1306='?', @p1307='?' (Size = 4000), @p1308='?', @p1309='?' (Size = 4000), @p1310='?' (Size = 4000), @p1311='?', @p1312='?' (Size = 4000), @p1313='?', @p1314='?' (Size = 4000), @p1315='?' (Size = 4000), @p1316='?', @p1317='?' (Size = 4000), @p1318='?', @p1319='?' (Size = 4000), @p1320='?' (Size = 4000), @p1321='?', @p1322='?' (Size = 4000), @p1323='?', @p1324='?' (Size = 4000), @p1325='?' (Size = 4000), @p1326='?', @p1327='?' (Size = 4000), @p1328='?', @p1329='?' (Size = 4000), @p1330='?' (Size = 4000), @p1331='?', @p1332='?' (Size = 4000), @p1333='?', @p1334='?' (Size = 4000), @p1335='?' (Size = 4000), @p1336='?', @p1337='?' (Size = 4000), @p1338='?', @p1339='?' (Size = 4000), @p1340='?' (Size = 4000), @p1341='?', @p1342='?' (Size = 4000), @p1343='?', @p1344='?' (Size = 4000), @p1345='?' (Size = 4000), @p1346='?', @p1347='?' (Size = 4000), @p1348='?', @p1349='?' (Size = 4000), @p1350='?' (Size = 4000), @p1351='?', @p1352='?' (Size = 4000), @p1353='?', @p1354='?' (Size = 4000), @p1355='?' (Size = 4000), @p1356='?', @p1357='?' (Size = 4000), @p1358='?', @p1359='?' (Size = 4000), @p1360='?' (Size = 4000), @p1361='?', @p1362='?' (Size = 4000), @p1363='?', @p1364='?' (Size = 4000), @p1365='?' (Size = 4000), @p1366='?', @p1367='?' (Size = 4000), @p1368='?', @p1369='?' (Size = 4000), @p1370='?' (Size = 4000), @p1371='?', @p1372='?' (Size = 4000), @p1373='?', @p1374='?' (Size = 4000), @p1375='?' (Size = 4000), @p1376='?', @p1377='?' (Size = 4000), @p1378='?', @p1379='?' (Size = 4000), @p1380='?' (Size = 4000), @p1381='?', @p1382='?' (Size = 4000), @p1383='?', @p1384='?' (Size = 4000), @p1385='?' (Size = 4000), @p1386='?', @p1387='?' (Size = 4000), @p1388='?', @p1389='?' (Size = 4000), @p1390='?' (Size = 4000), @p1391='?', @p1392='?' (Size = 4000), @p1393='?', @p1394='?' (Size = 4000), @p1395='?' (Size = 4000), @p1396='?', @p1397='?' (Size = 4000), @p1398='?', @p1399='?' (Size = 4000), @p1400='?' (Size = 4000), @p1401='?', @p1402='?' (Size = 4000), @p1403='?', @p1404='?' (Size = 4000), @p1405='?' (Size = 4000), @p1406='?', @p1407='?' (Size = 4000), @p1408='?', @p1409='?' (Size = 4000), @p1410='?' (Size = 4000), @p1411='?', @p1412='?' (Size = 4000), @p1413='?', @p1414='?' (Size = 4000), @p1415='?' (Size = 4000), @p1416='?', @p1417='?' (Size = 4000), @p1418='?', @p1419='?' (Size = 4000), @p1420='?' (Size = 4000), @p1421='?', @p1422='?' (Size = 4000), @p1423='?', @p1424='?' (Size = 4000), @p1425='?' (Size = 4000), @p1426='?', @p1427='?' (Size = 4000), @p1428='?', @p1429='?' (Size = 4000), @p1430='?' (Size = 4000), @p1431='?', @p1432='?' (Size = 4000), @p1433='?', @p1434='?' (Size = 4000), @p1435='?' (Size = 4000), @p1436='?', @p1437='?' (Size = 4000), @p1438='?', @p1439='?' (Size = 4000), @p1440='?' (Size = 4000), @p1441='?', @p1442='?' (Size = 4000), @p1443='?', @p1444='?' (Size = 4000), @p1445='?' (Size = 4000), @p1446='?', @p1447='?' (Size = 4000), @p1448='?', @p1449='?' (Size = 4000), @p1450='?' (Size = 4000), @p1451='?', @p1452='?' (Size = 4000), @p1453='?', @p1454='?' (Size = 4000), @p1455='?' (Size = 4000), @p1456='?', @p1457='?' (Size = 4000), @p1458='?', @p1459='?' (Size = 4000), @p1460='?' (Size = 4000), @p1461='?', @p1462='?' (Size = 4000), @p1463='?', @p1464='?' (Size = 4000), @p1465='?' (Size = 4000), @p1466='?', @p1467='?' (Size = 4000), @p1468='?', @p1469='?' (Size = 4000), @p1470='?' (Size = 4000), @p1471='?', @p1472='?' (Size = 4000), @p1473='?', @p1474='?' (Size = 4000), @p1475='?' (Size = 4000), @p1476='?', @p1477='?' (Size = 4000), @p1478='?', @p1479='?' (Size = 4000), @p1480='?' (Size = 4000), @p1481='?', @p1482='?' (Size = 4000), @p1483='?', @p1484='?' (Size = 4000), @p1485='?' (Size = 4000), @p1486='?', @p1487='?' (Size = 4000), @p1488='?', @p1489='?' (Size = 4000), @p1490='?' (Size = 4000), @p1491='?', @p1492='?' (Size = 4000), @p1493='?', @p1494='?' (Size = 4000), @p1495='?' (Size = 4000), @p1496='?', @p1497='?' (Size = 4000), @p1498='?', @p1499='?' (Size = 4000), @p1500='?' (Size = 4000), @p1501='?', @p1502='?' (Size = 4000), @p1503='?', @p1504='?' (Size = 4000), @p1505='?' (Size = 4000), @p1506='?', @p1507='?' (Size = 4000), @p1508='?', @p1509='?' (Size = 4000), @p1510='?' (Size = 4000), @p1511='?', @p1512='?' (Size = 4000), @p1513='?', @p1514='?' (Size = 4000), @p1515='?' (Size = 4000), @p1516='?', @p1517='?' (Size = 4000), @p1518='?', @p1519='?' (Size = 4000), @p1520='?' (Size = 4000), @p1521='?', @p1522='?' (Size = 4000), @p1523='?', @p1524='?' (Size = 4000), @p1525='?' (Size = 4000), @p1526='?', @p1527='?' (Size = 4000), @p1528='?', @p1529='?' (Size = 4000), @p1530='?' (Size = 4000), @p1531='?', @p1532='?' (Size = 4000), @p1533='?', @p1534='?' (Size = 4000), @p1535='?' (Size = 4000), @p1536='?', @p1537='?' (Size = 4000), @p1538='?', @p1539='?' (Size = 4000), @p1540='?' (Size = 4000), @p1541='?', @p1542='?' (Size = 4000), @p1543='?', @p1544='?' (Size = 4000), @p1545='?' (Size = 4000), @p1546='?', @p1547='?' (Size = 4000), @p1548='?', @p1549='?' (Size = 4000), @p1550='?' (Size = 4000), @p1551='?', @p1552='?' (Size = 4000), @p1553='?', @p1554='?' (Size = 4000), @p1555='?' (Size = 4000), @p1556='?', @p1557='?' (Size = 4000), @p1558='?', @p1559='?' (Size = 4000), @p1560='?' (Size = 4000), @p1561='?', @p1562='?' (Size = 4000), @p1563='?', @p1564='?' (Size = 4000), @p1565='?' (Size = 4000), @p1566='?', @p1567='?' (Size = 4000), @p1568='?', @p1569='?' (Size = 4000), @p1570='?' (Size = 4000), @p1571='?', @p1572='?' (Size = 4000), @p1573='?', @p1574='?' (Size = 4000), @p1575='?' (Size = 4000), @p1576='?', @p1577='?' (Size = 4000), @p1578='?', @p1579='?' (Size = 4000), @p1580='?' (Size = 4000), @p1581='?', @p1582='?' (Size = 4000), @p1583='?', @p1584='?' (Size = 4000), @p1585='?' (Size = 4000), @p1586='?', @p1587='?' (Size = 4000), @p1588='?', @p1589='?' (Size = 4000), @p1590='?' (Size = 4000), @p1591='?', @p1592='?' (Size = 4000), @p1593='?', @p1594='?' (Size = 4000), @p1595='?' (Size = 4000), @p1596='?', @p1597='?' (Size = 4000), @p1598='?', @p1599='?' (Size = 4000), @p1600='?' (Size = 4000), @p1601='?', @p1602='?' (Size = 4000), @p1603='?', @p1604='?' (Size = 4000), @p1605='?' (Size = 4000), @p1606='?', @p1607='?' (Size = 4000), @p1608='?', @p1609='?' (Size = 4000), @p1610='?' (Size = 4000), @p1611='?', @p1612='?' (Size = 4000), @p1613='?', @p1614='?' (Size = 4000), @p1615='?' (Size = 4000), @p1616='?', @p1617='?' (Size = 4000), @p1618='?', @p1619='?' (Size = 4000), @p1620='?' (Size = 4000), @p1621='?', @p1622='?' (Size = 4000), @p1623='?', @p1624='?' (Size = 4000), @p1625='?' (Size = 4000), @p1626='?', @p1627='?' (Size = 4000), @p1628='?', @p1629='?' (Size = 4000), @p1630='?' (Size = 4000), @p1631='?', @p1632='?' (Size = 4000), @p1633='?', @p1634='?' (Size = 4000), @p1635='?' (Size = 4000), @p1636='?', @p1637='?' (Size = 4000), @p1638='?', @p1639='?' (Size = 4000), @p1640='?' (Size = 4000), @p1641='?', @p1642='?' (Size = 4000), @p1643='?', @p1644='?' (Size = 4000), @p1645='?' (Size = 4000), @p1646='?', @p1647='?' (Size = 4000), @p1648='?', @p1649='?' (Size = 4000), @p1650='?' (Size = 4000), @p1651='?', @p1652='?' (Size = 4000), @p1653='?', @p1654='?' (Size = 4000), @p1655='?' (Size = 4000), @p1656='?', @p1657='?' (Size = 4000), @p1658='?', @p1659='?' (Size = 4000), @p1660='?' (Size = 4000), @p1661='?', @p1662='?' (Size = 4000), @p1663='?', @p1664='?' (Size = 4000), @p1665='?' (Size = 4000), @p1666='?', @p1667='?' (Size = 4000), @p1668='?', @p1669='?' (Size = 4000), @p1670='?' (Size = 4000), @p1671='?', @p1672='?' (Size = 4000), @p1673='?', @p1674='?' (Size = 4000), @p1675='?' (Size = 4000), @p1676='?', @p1677='?' (Size = 4000), @p1678='?', @p1679='?' (Size = 4000), @p1680='?' (Size = 4000), @p1681='?', @p1682='?' (Size = 4000), @p1683='?', @p1684='?' (Size = 4000), @p1685='?' (Size = 4000), @p1686='?', @p1687='?' (Size = 4000), @p1688='?', @p1689='?' (Size = 4000), @p1690='?' (Size = 4000), @p1691='?', @p1692='?' (Size = 4000), @p1693='?', @p1694='?' (Size = 4000), @p1695='?' (Size = 4000), @p1696='?', @p1697='?' (Size = 4000), @p1698='?', @p1699='?' (Size = 4000), @p1700='?' (Size = 4000), @p1701='?', @p1702='?' (Size = 4000), @p1703='?', @p1704='?' (Size = 4000), @p1705='?' (Size = 4000), @p1706='?', @p1707='?' (Size = 4000), @p1708='?', @p1709='?' (Size = 4000), @p1710='?' (Size = 4000), @p1711='?', @p1712='?' (Size = 4000), @p1713='?', @p1714='?' (Size = 4000), @p1715='?' (Size = 4000), @p1716='?', @p1717='?' (Size = 4000), @p1718='?', @p1719='?' (Size = 4000), @p1720='?' (Size = 4000), @p1721='?', @p1722='?' (Size = 4000), @p1723='?', @p1724='?' (Size = 4000), @p1725='?' (Size = 4000), @p1726='?', @p1727='?' (Size = 4000), @p1728='?', @p1729='?' (Size = 4000), @p1730='?' (Size = 4000), @p1731='?', @p1732='?' (Size = 4000), @p1733='?', @p1734='?' (Size = 4000), @p1735='?' (Size = 4000), @p1736='?', @p1737='?' (Size = 4000), @p1738='?', @p1739='?' (Size = 4000), @p1740='?' (Size = 4000), @p1741='?', @p1742='?' (Size = 4000), @p1743='?', @p1744='?' (Size = 4000), @p1745='?' (Size = 4000), @p1746='?', @p1747='?' (Size = 4000), @p1748='?', @p1749='?' (Size = 4000), @p1750='?' (Size = 4000), @p1751='?', @p1752='?' (Size = 4000), @p1753='?', @p1754='?' (Size = 4000), @p1755='?' (Size = 4000), @p1756='?', @p1757='?' (Size = 4000), @p1758='?', @p1759='?' (Size = 4000), @p1760='?' (Size = 4000), @p1761='?', @p1762='?' (Size = 4000), @p1763='?', @p1764='?' (Size = 4000), @p1765='?' (Size = 4000), @p1766='?', @p1767='?' (Size = 4000), @p1768='?', @p1769='?' (Size = 4000), @p1770='?' (Size = 4000), @p1771='?', @p1772='?' (Size = 4000), @p1773='?', @p1774='?' (Size = 4000), @p1775='?' (Size = 4000), @p1776='?', @p1777='?' (Size = 4000), @p1778='?', @p1779='?' (Size = 4000), @p1780='?' (Size = 4000), @p1781='?', @p1782='?' (Size = 4000), @p1783='?', @p1784='?' (Size = 4000), @p1785='?' (Size = 4000), @p1786='?', @p1787='?' (Size = 4000), @p1788='?', @p1789='?' (Size = 4000), @p1790='?' (Size = 4000), @p1791='?', @p1792='?' (Size = 4000), @p1793='?', @p1794='?' (Size = 4000), @p1795='?' (Size = 4000), @p1796='?', @p1797='?' (Size = 4000), @p1798='?', @p1799='?' (Size = 4000), @p1800='?' (Size = 4000), @p1801='?', @p1802='?' (Size = 4000), @p1803='?', @p1804='?' (Size = 4000), @p1805='?' (Size = 4000), @p1806='?', @p1807='?' (Size = 4000), @p1808='?', @p1809='?' (Size = 4000), @p1810='?' (Size = 4000), @p1811='?', @p1812='?' (Size = 4000), @p1813='?', @p1814='?' (Size = 4000), @p1815='?' (Size = 4000), @p1816='?', @p1817='?' (Size = 4000), @p1818='?', @p1819='?' (Size = 4000), @p1820='?' (Size = 4000), @p1821='?', @p1822='?' (Size = 4000), @p1823='?', @p1824='?' (Size = 4000), @p1825='?' (Size = 4000), @p1826='?', @p1827='?' (Size = 4000), @p1828='?', @p1829='?' (Size = 4000), @p1830='?' (Size = 4000), @p1831='?', @p1832='?' (Size = 4000), @p1833='?', @p1834='?' (Size = 4000), @p1835='?' (Size = 4000), @p1836='?', @p1837='?' (Size = 4000), @p1838='?', @p1839='?' (Size = 4000), @p1840='?' (Size = 4000), @p1841='?', @p1842='?' (Size = 4000), @p1843='?', @p1844='?' (Size = 4000), @p1845='?' (Size = 4000), @p1846='?', @p1847='?' (Size = 4000), @p1848='?', @p1849='?' (Size = 4000), @p1850='?' (Size = 4000), @p1851='?', @p1852='?' (Size = 4000), @p1853='?', @p1854='?' (Size = 4000), @p1855='?' (Size = 4000), @p1856='?', @p1857='?' (Size = 4000), @p1858='?', @p1859='?' (Size = 4000), @p1860='?' (Size = 4000), @p1861='?', @p1862='?' (Size = 4000), @p1863='?', @p1864='?' (Size = 4000), @p1865='?' (Size = 4000), @p1866='?', @p1867='?' (Size = 4000), @p1868='?', @p1869='?' (Size = 4000), @p1870='?' (Size = 4000), @p1871='?', @p1872='?' (Size = 4000), @p1873='?', @p1874='?' (Size = 4000), @p1875='?' (Size = 4000), @p1876='?', @p1877='?' (Size = 4000), @p1878='?', @p1879='?' (Size = 4000), @p1880='?' (Size = 4000), @p1881='?', @p1882='?' (Size = 4000), @p1883='?', @p1884='?' (Size = 4000), @p1885='?' (Size = 4000), @p1886='?', @p1887='?' (Size = 4000), @p1888='?', @p1889='?' (Size = 4000), @p1890='?' (Size = 4000), @p1891='?', @p1892='?' (Size = 4000), @p1893='?', @p1894='?' (Size = 4000), @p1895='?' (Size = 4000), @p1896='?', @p1897='?' (Size = 4000), @p1898='?', @p1899='?' (Size = 4000), @p1900='?' (Size = 4000), @p1901='?', @p1902='?' (Size = 4000), @p1903='?', @p1904='?' (Size = 4000), @p1905='?' (Size = 4000), @p1906='?', @p1907='?' (Size = 4000), @p1908='?', @p1909='?' (Size = 4000), @p1910='?' (Size = 4000), @p1911='?', @p1912='?' (Size = 4000), @p1913='?', @p1914='?' (Size = 4000), @p1915='?' (Size = 4000), @p1916='?', @p1917='?' (Size = 4000), @p1918='?', @p1919='?' (Size = 4000), @p1920='?' (Size = 4000), @p1921='?', @p1922='?' (Size = 4000), @p1923='?', @p1924='?' (Size = 4000), @p1925='?' (Size = 4000), @p1926='?', @p1927='?' (Size = 4000), @p1928='?', @p1929='?' (Size = 4000), @p1930='?' (Size = 4000), @p1931='?', @p1932='?' (Size = 4000), @p1933='?', @p1934='?' (Size = 4000), @p1935='?' (Size = 4000), @p1936='?', @p1937='?' (Size = 4000), @p1938='?', @p1939='?' (Size = 4000), @p1940='?' (Size = 4000), @p1941='?', @p1942='?' (Size = 4000), @p1943='?', @p1944='?' (Size = 4000), @p1945='?' (Size = 4000), @p1946='?', @p1947='?' (Size = 4000), @p1948='?', @p1949='?' (Size = 4000), @p1950='?' (Size = 4000), @p1951='?', @p1952='?' (Size = 4000), @p1953='?', @p1954='?' (Size = 4000), @p1955='?' (Size = 4000), @p1956='?', @p1957='?' (Size = 4000), @p1958='?', @p1959='?' (Size = 4000), @p1960='?' (Size = 4000), @p1961='?', @p1962='?' (Size = 4000), @p1963='?', @p1964='?' (Size = 4000), @p1965='?' (Size = 4000), @p1966='?', @p1967='?' (Size = 4000), @p1968='?', @p1969='?' (Size = 4000), @p1970='?' (Size = 4000), @p1971='?', @p1972='?' (Size = 4000), @p1973='?', @p1974='?' (Size = 4000), @p1975='?' (Size = 4000), @p1976='?', @p1977='?' (Size = 4000), @p1978='?', @p1979='?' (Size = 4000), @p1980='?' (Size = 4000), @p1981='?', @p1982='?' (Size = 4000), @p1983='?', @p1984='?' (Size = 4000), @p1985='?' (Size = 4000), @p1986='?', @p1987='?' (Size = 4000), @p1988='?', @p1989='?' (Size = 4000), @p1990='?' (Size = 4000), @p1991='?', @p1992='?' (Size = 4000), @p1993='?', @p1994='?' (Size = 4000), @p1995='?' (Size = 4000), @p1996='?', @p1997='?' (Size = 4000), @p1998='?', @p1999='?' (Size = 4000), @p2000='?' (Size = 4000), @p2001='?', @p2002='?' (Size = 4000), @p2003='?', @p2004='?' (Size = 4000), @p2005='?' (Size = 4000), @p2006='?', @p2007='?' (Size = 4000), @p2008='?', @p2009='?' (Size = 4000), @p2010='?' (Size = 4000), @p2011='?', @p2012='?' (Size = 4000), @p2013='?', @p2014='?' (Size = 4000), @p2015='?' (Size = 4000), @p2016='?', @p2017='?' (Size = 4000), @p2018='?', @p2019='?' (Size = 4000), @p2020='?' (Size = 4000), @p2021='?', @p2022='?' (Size = 4000), @p2023='?', @p2024='?' (Size = 4000), @p2025='?' (Size = 4000), @p2026='?', @p2027='?' (Size = 4000), @p2028='?', @p2029='?' (Size = 4000), @p2030='?' (Size = 4000), @p2031='?', @p2032='?' (Size = 4000), @p2033='?', @p2034='?' (Size = 4000), @p2035='?' (Size = 4000), @p2036='?', @p2037='?' (Size = 4000), @p2038='?', @p2039='?' (Size = 4000), @p2040='?' (Size = 4000), @p2041='?', @p2042='?' (Size = 4000), @p2043='?', @p2044='?' (Size = 4000), @p2045='?' (Size = 4000), @p2046='?', @p2047='?' (Size = 4000), @p2048='?', @p2049='?' (Size = 4000), @p2050='?' (Size = 4000), @p2051='?', @p2052='?' (Size = 4000), @p2053='?', @p2054='?' (Size = 4000), @p2055='?' (Size = 4000), @p2056='?', @p2057='?' (Size = 4000), @p2058='?', @p2059='?' (Size = 4000), @p2060='?' (Size = 4000), @p2061='?', @p2062='?' (Size = 4000), @p2063='?', @p2064='?' (Size = 4000), @p2065='?' (Size = 4000), @p2066='?', @p2067='?' (Size = 4000), @p2068='?', @p2069='?' (Size = 4000), @p2070='?' (Size = 4000), @p2071='?', @p2072='?' (Size = 4000), @p2073='?', @p2074='?' (Size = 4000), @p2075='?' (Size = 4000), @p2076='?', @p2077='?' (Size = 4000), @p2078='?', @p2079='?' (Size = 4000), @p2080='?' (Size = 4000), @p2081='?', @p2082='?' (Size = 4000), @p2083='?', @p2084='?' (Size = 4000), @p2085='?' (Size = 4000), @p2086='?', @p2087='?' (Size = 4000), @p2088='?', @p2089='?' (Size = 4000), @p2090='?' (Size = 4000), @p2091='?', @p2092='?' (Size = 4000), @p2093='?', @p2094='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19),
+(@p100, @p101, @p102, @p103, @p104, 20),
+(@p105, @p106, @p107, @p108, @p109, 21),
+(@p110, @p111, @p112, @p113, @p114, 22),
+(@p115, @p116, @p117, @p118, @p119, 23),
+(@p120, @p121, @p122, @p123, @p124, 24),
+(@p125, @p126, @p127, @p128, @p129, 25),
+(@p130, @p131, @p132, @p133, @p134, 26),
+(@p135, @p136, @p137, @p138, @p139, 27),
+(@p140, @p141, @p142, @p143, @p144, 28),
+(@p145, @p146, @p147, @p148, @p149, 29),
+(@p150, @p151, @p152, @p153, @p154, 30),
+(@p155, @p156, @p157, @p158, @p159, 31),
+(@p160, @p161, @p162, @p163, @p164, 32),
+(@p165, @p166, @p167, @p168, @p169, 33),
+(@p170, @p171, @p172, @p173, @p174, 34),
+(@p175, @p176, @p177, @p178, @p179, 35),
+(@p180, @p181, @p182, @p183, @p184, 36),
+(@p185, @p186, @p187, @p188, @p189, 37),
+(@p190, @p191, @p192, @p193, @p194, 38),
+(@p195, @p196, @p197, @p198, @p199, 39),
+(@p200, @p201, @p202, @p203, @p204, 40),
+(@p205, @p206, @p207, @p208, @p209, 41),
+(@p210, @p211, @p212, @p213, @p214, 42),
+(@p215, @p216, @p217, @p218, @p219, 43),
+(@p220, @p221, @p222, @p223, @p224, 44),
+(@p225, @p226, @p227, @p228, @p229, 45),
+(@p230, @p231, @p232, @p233, @p234, 46),
+(@p235, @p236, @p237, @p238, @p239, 47),
+(@p240, @p241, @p242, @p243, @p244, 48),
+(@p245, @p246, @p247, @p248, @p249, 49),
+(@p250, @p251, @p252, @p253, @p254, 50),
+(@p255, @p256, @p257, @p258, @p259, 51),
+(@p260, @p261, @p262, @p263, @p264, 52),
+(@p265, @p266, @p267, @p268, @p269, 53),
+(@p270, @p271, @p272, @p273, @p274, 54),
+(@p275, @p276, @p277, @p278, @p279, 55),
+(@p280, @p281, @p282, @p283, @p284, 56),
+(@p285, @p286, @p287, @p288, @p289, 57),
+(@p290, @p291, @p292, @p293, @p294, 58),
+(@p295, @p296, @p297, @p298, @p299, 59),
+(@p300, @p301, @p302, @p303, @p304, 60),
+(@p305, @p306, @p307, @p308, @p309, 61),
+(@p310, @p311, @p312, @p313, @p314, 62),
+(@p315, @p316, @p317, @p318, @p319, 63),
+(@p320, @p321, @p322, @p323, @p324, 64),
+(@p325, @p326, @p327, @p328, @p329, 65),
+(@p330, @p331, @p332, @p333, @p334, 66),
+(@p335, @p336, @p337, @p338, @p339, 67),
+(@p340, @p341, @p342, @p343, @p344, 68),
+(@p345, @p346, @p347, @p348, @p349, 69),
+(@p350, @p351, @p352, @p353, @p354, 70),
+(@p355, @p356, @p357, @p358, @p359, 71),
+(@p360, @p361, @p362, @p363, @p364, 72),
+(@p365, @p366, @p367, @p368, @p369, 73),
+(@p370, @p371, @p372, @p373, @p374, 74),
+(@p375, @p376, @p377, @p378, @p379, 75),
+(@p380, @p381, @p382, @p383, @p384, 76),
+(@p385, @p386, @p387, @p388, @p389, 77),
+(@p390, @p391, @p392, @p393, @p394, 78),
+(@p395, @p396, @p397, @p398, @p399, 79),
+(@p400, @p401, @p402, @p403, @p404, 80),
+(@p405, @p406, @p407, @p408, @p409, 81),
+(@p410, @p411, @p412, @p413, @p414, 82),
+(@p415, @p416, @p417, @p418, @p419, 83),
+(@p420, @p421, @p422, @p423, @p424, 84),
+(@p425, @p426, @p427, @p428, @p429, 85),
+(@p430, @p431, @p432, @p433, @p434, 86),
+(@p435, @p436, @p437, @p438, @p439, 87),
+(@p440, @p441, @p442, @p443, @p444, 88),
+(@p445, @p446, @p447, @p448, @p449, 89),
+(@p450, @p451, @p452, @p453, @p454, 90),
+(@p455, @p456, @p457, @p458, @p459, 91),
+(@p460, @p461, @p462, @p463, @p464, 92),
+(@p465, @p466, @p467, @p468, @p469, 93),
+(@p470, @p471, @p472, @p473, @p474, 94),
+(@p475, @p476, @p477, @p478, @p479, 95),
+(@p480, @p481, @p482, @p483, @p484, 96),
+(@p485, @p486, @p487, @p488, @p489, 97),
+(@p490, @p491, @p492, @p493, @p494, 98),
+(@p495, @p496, @p497, @p498, @p499, 99),
+(@p500, @p501, @p502, @p503, @p504, 100),
+(@p505, @p506, @p507, @p508, @p509, 101),
+(@p510, @p511, @p512, @p513, @p514, 102),
+(@p515, @p516, @p517, @p518, @p519, 103),
+(@p520, @p521, @p522, @p523, @p524, 104),
+(@p525, @p526, @p527, @p528, @p529, 105),
+(@p530, @p531, @p532, @p533, @p534, 106),
+(@p535, @p536, @p537, @p538, @p539, 107),
+(@p540, @p541, @p542, @p543, @p544, 108),
+(@p545, @p546, @p547, @p548, @p549, 109),
+(@p550, @p551, @p552, @p553, @p554, 110),
+(@p555, @p556, @p557, @p558, @p559, 111),
+(@p560, @p561, @p562, @p563, @p564, 112),
+(@p565, @p566, @p567, @p568, @p569, 113),
+(@p570, @p571, @p572, @p573, @p574, 114),
+(@p575, @p576, @p577, @p578, @p579, 115),
+(@p580, @p581, @p582, @p583, @p584, 116),
+(@p585, @p586, @p587, @p588, @p589, 117),
+(@p590, @p591, @p592, @p593, @p594, 118),
+(@p595, @p596, @p597, @p598, @p599, 119),
+(@p600, @p601, @p602, @p603, @p604, 120),
+(@p605, @p606, @p607, @p608, @p609, 121),
+(@p610, @p611, @p612, @p613, @p614, 122),
+(@p615, @p616, @p617, @p618, @p619, 123),
+(@p620, @p621, @p622, @p623, @p624, 124),
+(@p625, @p626, @p627, @p628, @p629, 125),
+(@p630, @p631, @p632, @p633, @p634, 126),
+(@p635, @p636, @p637, @p638, @p639, 127),
+(@p640, @p641, @p642, @p643, @p644, 128),
+(@p645, @p646, @p647, @p648, @p649, 129),
+(@p650, @p651, @p652, @p653, @p654, 130),
+(@p655, @p656, @p657, @p658, @p659, 131),
+(@p660, @p661, @p662, @p663, @p664, 132),
+(@p665, @p666, @p667, @p668, @p669, 133),
+(@p670, @p671, @p672, @p673, @p674, 134),
+(@p675, @p676, @p677, @p678, @p679, 135),
+(@p680, @p681, @p682, @p683, @p684, 136),
+(@p685, @p686, @p687, @p688, @p689, 137),
+(@p690, @p691, @p692, @p693, @p694, 138),
+(@p695, @p696, @p697, @p698, @p699, 139),
+(@p700, @p701, @p702, @p703, @p704, 140),
+(@p705, @p706, @p707, @p708, @p709, 141),
+(@p710, @p711, @p712, @p713, @p714, 142),
+(@p715, @p716, @p717, @p718, @p719, 143),
+(@p720, @p721, @p722, @p723, @p724, 144),
+(@p725, @p726, @p727, @p728, @p729, 145),
+(@p730, @p731, @p732, @p733, @p734, 146),
+(@p735, @p736, @p737, @p738, @p739, 147),
+(@p740, @p741, @p742, @p743, @p744, 148),
+(@p745, @p746, @p747, @p748, @p749, 149),
+(@p750, @p751, @p752, @p753, @p754, 150),
+(@p755, @p756, @p757, @p758, @p759, 151),
+(@p760, @p761, @p762, @p763, @p764, 152),
+(@p765, @p766, @p767, @p768, @p769, 153),
+(@p770, @p771, @p772, @p773, @p774, 154),
+(@p775, @p776, @p777, @p778, @p779, 155),
+(@p780, @p781, @p782, @p783, @p784, 156),
+(@p785, @p786, @p787, @p788, @p789, 157),
+(@p790, @p791, @p792, @p793, @p794, 158),
+(@p795, @p796, @p797, @p798, @p799, 159),
+(@p800, @p801, @p802, @p803, @p804, 160),
+(@p805, @p806, @p807, @p808, @p809, 161),
+(@p810, @p811, @p812, @p813, @p814, 162),
+(@p815, @p816, @p817, @p818, @p819, 163),
+(@p820, @p821, @p822, @p823, @p824, 164),
+(@p825, @p826, @p827, @p828, @p829, 165),
+(@p830, @p831, @p832, @p833, @p834, 166),
+(@p835, @p836, @p837, @p838, @p839, 167),
+(@p840, @p841, @p842, @p843, @p844, 168),
+(@p845, @p846, @p847, @p848, @p849, 169),
+(@p850, @p851, @p852, @p853, @p854, 170),
+(@p855, @p856, @p857, @p858, @p859, 171),
+(@p860, @p861, @p862, @p863, @p864, 172),
+(@p865, @p866, @p867, @p868, @p869, 173),
+(@p870, @p871, @p872, @p873, @p874, 174),
+(@p875, @p876, @p877, @p878, @p879, 175),
+(@p880, @p881, @p882, @p883, @p884, 176),
+(@p885, @p886, @p887, @p888, @p889, 177),
+(@p890, @p891, @p892, @p893, @p894, 178),
+(@p895, @p896, @p897, @p898, @p899, 179),
+(@p900, @p901, @p902, @p903, @p904, 180),
+(@p905, @p906, @p907, @p908, @p909, 181),
+(@p910, @p911, @p912, @p913, @p914, 182),
+(@p915, @p916, @p917, @p918, @p919, 183),
+(@p920, @p921, @p922, @p923, @p924, 184),
+(@p925, @p926, @p927, @p928, @p929, 185),
+(@p930, @p931, @p932, @p933, @p934, 186),
+(@p935, @p936, @p937, @p938, @p939, 187),
+(@p940, @p941, @p942, @p943, @p944, 188),
+(@p945, @p946, @p947, @p948, @p949, 189),
+(@p950, @p951, @p952, @p953, @p954, 190),
+(@p955, @p956, @p957, @p958, @p959, 191),
+(@p960, @p961, @p962, @p963, @p964, 192),
+(@p965, @p966, @p967, @p968, @p969, 193),
+(@p970, @p971, @p972, @p973, @p974, 194),
+(@p975, @p976, @p977, @p978, @p979, 195),
+(@p980, @p981, @p982, @p983, @p984, 196),
+(@p985, @p986, @p987, @p988, @p989, 197),
+(@p990, @p991, @p992, @p993, @p994, 198),
+(@p995, @p996, @p997, @p998, @p999, 199),
+(@p1000, @p1001, @p1002, @p1003, @p1004, 200),
+(@p1005, @p1006, @p1007, @p1008, @p1009, 201),
+(@p1010, @p1011, @p1012, @p1013, @p1014, 202),
+(@p1015, @p1016, @p1017, @p1018, @p1019, 203),
+(@p1020, @p1021, @p1022, @p1023, @p1024, 204),
+(@p1025, @p1026, @p1027, @p1028, @p1029, 205),
+(@p1030, @p1031, @p1032, @p1033, @p1034, 206),
+(@p1035, @p1036, @p1037, @p1038, @p1039, 207),
+(@p1040, @p1041, @p1042, @p1043, @p1044, 208),
+(@p1045, @p1046, @p1047, @p1048, @p1049, 209),
+(@p1050, @p1051, @p1052, @p1053, @p1054, 210),
+(@p1055, @p1056, @p1057, @p1058, @p1059, 211),
+(@p1060, @p1061, @p1062, @p1063, @p1064, 212),
+(@p1065, @p1066, @p1067, @p1068, @p1069, 213),
+(@p1070, @p1071, @p1072, @p1073, @p1074, 214),
+(@p1075, @p1076, @p1077, @p1078, @p1079, 215),
+(@p1080, @p1081, @p1082, @p1083, @p1084, 216),
+(@p1085, @p1086, @p1087, @p1088, @p1089, 217),
+(@p1090, @p1091, @p1092, @p1093, @p1094, 218),
+(@p1095, @p1096, @p1097, @p1098, @p1099, 219),
+(@p1100, @p1101, @p1102, @p1103, @p1104, 220),
+(@p1105, @p1106, @p1107, @p1108, @p1109, 221),
+(@p1110, @p1111, @p1112, @p1113, @p1114, 222),
+(@p1115, @p1116, @p1117, @p1118, @p1119, 223),
+(@p1120, @p1121, @p1122, @p1123, @p1124, 224),
+(@p1125, @p1126, @p1127, @p1128, @p1129, 225),
+(@p1130, @p1131, @p1132, @p1133, @p1134, 226),
+(@p1135, @p1136, @p1137, @p1138, @p1139, 227),
+(@p1140, @p1141, @p1142, @p1143, @p1144, 228),
+(@p1145, @p1146, @p1147, @p1148, @p1149, 229),
+(@p1150, @p1151, @p1152, @p1153, @p1154, 230),
+(@p1155, @p1156, @p1157, @p1158, @p1159, 231),
+(@p1160, @p1161, @p1162, @p1163, @p1164, 232),
+(@p1165, @p1166, @p1167, @p1168, @p1169, 233),
+(@p1170, @p1171, @p1172, @p1173, @p1174, 234),
+(@p1175, @p1176, @p1177, @p1178, @p1179, 235),
+(@p1180, @p1181, @p1182, @p1183, @p1184, 236),
+(@p1185, @p1186, @p1187, @p1188, @p1189, 237),
+(@p1190, @p1191, @p1192, @p1193, @p1194, 238),
+(@p1195, @p1196, @p1197, @p1198, @p1199, 239),
+(@p1200, @p1201, @p1202, @p1203, @p1204, 240),
+(@p1205, @p1206, @p1207, @p1208, @p1209, 241),
+(@p1210, @p1211, @p1212, @p1213, @p1214, 242),
+(@p1215, @p1216, @p1217, @p1218, @p1219, 243),
+(@p1220, @p1221, @p1222, @p1223, @p1224, 244),
+(@p1225, @p1226, @p1227, @p1228, @p1229, 245),
+(@p1230, @p1231, @p1232, @p1233, @p1234, 246),
+(@p1235, @p1236, @p1237, @p1238, @p1239, 247),
+(@p1240, @p1241, @p1242, @p1243, @p1244, 248),
+(@p1245, @p1246, @p1247, @p1248, @p1249, 249),
+(@p1250, @p1251, @p1252, @p1253, @p1254, 250),
+(@p1255, @p1256, @p1257, @p1258, @p1259, 251),
+(@p1260, @p1261, @p1262, @p1263, @p1264, 252),
+(@p1265, @p1266, @p1267, @p1268, @p1269, 253),
+(@p1270, @p1271, @p1272, @p1273, @p1274, 254),
+(@p1275, @p1276, @p1277, @p1278, @p1279, 255),
+(@p1280, @p1281, @p1282, @p1283, @p1284, 256),
+(@p1285, @p1286, @p1287, @p1288, @p1289, 257),
+(@p1290, @p1291, @p1292, @p1293, @p1294, 258),
+(@p1295, @p1296, @p1297, @p1298, @p1299, 259),
+(@p1300, @p1301, @p1302, @p1303, @p1304, 260),
+(@p1305, @p1306, @p1307, @p1308, @p1309, 261),
+(@p1310, @p1311, @p1312, @p1313, @p1314, 262),
+(@p1315, @p1316, @p1317, @p1318, @p1319, 263),
+(@p1320, @p1321, @p1322, @p1323, @p1324, 264),
+(@p1325, @p1326, @p1327, @p1328, @p1329, 265),
+(@p1330, @p1331, @p1332, @p1333, @p1334, 266),
+(@p1335, @p1336, @p1337, @p1338, @p1339, 267),
+(@p1340, @p1341, @p1342, @p1343, @p1344, 268),
+(@p1345, @p1346, @p1347, @p1348, @p1349, 269),
+(@p1350, @p1351, @p1352, @p1353, @p1354, 270),
+(@p1355, @p1356, @p1357, @p1358, @p1359, 271),
+(@p1360, @p1361, @p1362, @p1363, @p1364, 272),
+(@p1365, @p1366, @p1367, @p1368, @p1369, 273),
+(@p1370, @p1371, @p1372, @p1373, @p1374, 274),
+(@p1375, @p1376, @p1377, @p1378, @p1379, 275),
+(@p1380, @p1381, @p1382, @p1383, @p1384, 276),
+(@p1385, @p1386, @p1387, @p1388, @p1389, 277),
+(@p1390, @p1391, @p1392, @p1393, @p1394, 278),
+(@p1395, @p1396, @p1397, @p1398, @p1399, 279),
+(@p1400, @p1401, @p1402, @p1403, @p1404, 280),
+(@p1405, @p1406, @p1407, @p1408, @p1409, 281),
+(@p1410, @p1411, @p1412, @p1413, @p1414, 282),
+(@p1415, @p1416, @p1417, @p1418, @p1419, 283),
+(@p1420, @p1421, @p1422, @p1423, @p1424, 284),
+(@p1425, @p1426, @p1427, @p1428, @p1429, 285),
+(@p1430, @p1431, @p1432, @p1433, @p1434, 286),
+(@p1435, @p1436, @p1437, @p1438, @p1439, 287),
+(@p1440, @p1441, @p1442, @p1443, @p1444, 288),
+(@p1445, @p1446, @p1447, @p1448, @p1449, 289),
+(@p1450, @p1451, @p1452, @p1453, @p1454, 290),
+(@p1455, @p1456, @p1457, @p1458, @p1459, 291),
+(@p1460, @p1461, @p1462, @p1463, @p1464, 292),
+(@p1465, @p1466, @p1467, @p1468, @p1469, 293),
+(@p1470, @p1471, @p1472, @p1473, @p1474, 294),
+(@p1475, @p1476, @p1477, @p1478, @p1479, 295),
+(@p1480, @p1481, @p1482, @p1483, @p1484, 296),
+(@p1485, @p1486, @p1487, @p1488, @p1489, 297),
+(@p1490, @p1491, @p1492, @p1493, @p1494, 298),
+(@p1495, @p1496, @p1497, @p1498, @p1499, 299),
+(@p1500, @p1501, @p1502, @p1503, @p1504, 300),
+(@p1505, @p1506, @p1507, @p1508, @p1509, 301),
+(@p1510, @p1511, @p1512, @p1513, @p1514, 302),
+(@p1515, @p1516, @p1517, @p1518, @p1519, 303),
+(@p1520, @p1521, @p1522, @p1523, @p1524, 304),
+(@p1525, @p1526, @p1527, @p1528, @p1529, 305),
+(@p1530, @p1531, @p1532, @p1533, @p1534, 306),
+(@p1535, @p1536, @p1537, @p1538, @p1539, 307),
+(@p1540, @p1541, @p1542, @p1543, @p1544, 308),
+(@p1545, @p1546, @p1547, @p1548, @p1549, 309),
+(@p1550, @p1551, @p1552, @p1553, @p1554, 310),
+(@p1555, @p1556, @p1557, @p1558, @p1559, 311),
+(@p1560, @p1561, @p1562, @p1563, @p1564, 312),
+(@p1565, @p1566, @p1567, @p1568, @p1569, 313),
+(@p1570, @p1571, @p1572, @p1573, @p1574, 314),
+(@p1575, @p1576, @p1577, @p1578, @p1579, 315),
+(@p1580, @p1581, @p1582, @p1583, @p1584, 316),
+(@p1585, @p1586, @p1587, @p1588, @p1589, 317),
+(@p1590, @p1591, @p1592, @p1593, @p1594, 318),
+(@p1595, @p1596, @p1597, @p1598, @p1599, 319),
+(@p1600, @p1601, @p1602, @p1603, @p1604, 320),
+(@p1605, @p1606, @p1607, @p1608, @p1609, 321),
+(@p1610, @p1611, @p1612, @p1613, @p1614, 322),
+(@p1615, @p1616, @p1617, @p1618, @p1619, 323),
+(@p1620, @p1621, @p1622, @p1623, @p1624, 324),
+(@p1625, @p1626, @p1627, @p1628, @p1629, 325),
+(@p1630, @p1631, @p1632, @p1633, @p1634, 326),
+(@p1635, @p1636, @p1637, @p1638, @p1639, 327),
+(@p1640, @p1641, @p1642, @p1643, @p1644, 328),
+(@p1645, @p1646, @p1647, @p1648, @p1649, 329),
+(@p1650, @p1651, @p1652, @p1653, @p1654, 330),
+(@p1655, @p1656, @p1657, @p1658, @p1659, 331),
+(@p1660, @p1661, @p1662, @p1663, @p1664, 332),
+(@p1665, @p1666, @p1667, @p1668, @p1669, 333),
+(@p1670, @p1671, @p1672, @p1673, @p1674, 334),
+(@p1675, @p1676, @p1677, @p1678, @p1679, 335),
+(@p1680, @p1681, @p1682, @p1683, @p1684, 336),
+(@p1685, @p1686, @p1687, @p1688, @p1689, 337),
+(@p1690, @p1691, @p1692, @p1693, @p1694, 338),
+(@p1695, @p1696, @p1697, @p1698, @p1699, 339),
+(@p1700, @p1701, @p1702, @p1703, @p1704, 340),
+(@p1705, @p1706, @p1707, @p1708, @p1709, 341),
+(@p1710, @p1711, @p1712, @p1713, @p1714, 342),
+(@p1715, @p1716, @p1717, @p1718, @p1719, 343),
+(@p1720, @p1721, @p1722, @p1723, @p1724, 344),
+(@p1725, @p1726, @p1727, @p1728, @p1729, 345),
+(@p1730, @p1731, @p1732, @p1733, @p1734, 346),
+(@p1735, @p1736, @p1737, @p1738, @p1739, 347),
+(@p1740, @p1741, @p1742, @p1743, @p1744, 348),
+(@p1745, @p1746, @p1747, @p1748, @p1749, 349),
+(@p1750, @p1751, @p1752, @p1753, @p1754, 350),
+(@p1755, @p1756, @p1757, @p1758, @p1759, 351),
+(@p1760, @p1761, @p1762, @p1763, @p1764, 352),
+(@p1765, @p1766, @p1767, @p1768, @p1769, 353),
+(@p1770, @p1771, @p1772, @p1773, @p1774, 354),
+(@p1775, @p1776, @p1777, @p1778, @p1779, 355),
+(@p1780, @p1781, @p1782, @p1783, @p1784, 356),
+(@p1785, @p1786, @p1787, @p1788, @p1789, 357),
+(@p1790, @p1791, @p1792, @p1793, @p1794, 358),
+(@p1795, @p1796, @p1797, @p1798, @p1799, 359),
+(@p1800, @p1801, @p1802, @p1803, @p1804, 360),
+(@p1805, @p1806, @p1807, @p1808, @p1809, 361),
+(@p1810, @p1811, @p1812, @p1813, @p1814, 362),
+(@p1815, @p1816, @p1817, @p1818, @p1819, 363),
+(@p1820, @p1821, @p1822, @p1823, @p1824, 364),
+(@p1825, @p1826, @p1827, @p1828, @p1829, 365),
+(@p1830, @p1831, @p1832, @p1833, @p1834, 366),
+(@p1835, @p1836, @p1837, @p1838, @p1839, 367),
+(@p1840, @p1841, @p1842, @p1843, @p1844, 368),
+(@p1845, @p1846, @p1847, @p1848, @p1849, 369),
+(@p1850, @p1851, @p1852, @p1853, @p1854, 370),
+(@p1855, @p1856, @p1857, @p1858, @p1859, 371),
+(@p1860, @p1861, @p1862, @p1863, @p1864, 372),
+(@p1865, @p1866, @p1867, @p1868, @p1869, 373),
+(@p1870, @p1871, @p1872, @p1873, @p1874, 374),
+(@p1875, @p1876, @p1877, @p1878, @p1879, 375),
+(@p1880, @p1881, @p1882, @p1883, @p1884, 376),
+(@p1885, @p1886, @p1887, @p1888, @p1889, 377),
+(@p1890, @p1891, @p1892, @p1893, @p1894, 378),
+(@p1895, @p1896, @p1897, @p1898, @p1899, 379),
+(@p1900, @p1901, @p1902, @p1903, @p1904, 380),
+(@p1905, @p1906, @p1907, @p1908, @p1909, 381),
+(@p1910, @p1911, @p1912, @p1913, @p1914, 382),
+(@p1915, @p1916, @p1917, @p1918, @p1919, 383),
+(@p1920, @p1921, @p1922, @p1923, @p1924, 384),
+(@p1925, @p1926, @p1927, @p1928, @p1929, 385),
+(@p1930, @p1931, @p1932, @p1933, @p1934, 386),
+(@p1935, @p1936, @p1937, @p1938, @p1939, 387),
+(@p1940, @p1941, @p1942, @p1943, @p1944, 388),
+(@p1945, @p1946, @p1947, @p1948, @p1949, 389),
+(@p1950, @p1951, @p1952, @p1953, @p1954, 390),
+(@p1955, @p1956, @p1957, @p1958, @p1959, 391),
+(@p1960, @p1961, @p1962, @p1963, @p1964, 392),
+(@p1965, @p1966, @p1967, @p1968, @p1969, 393),
+(@p1970, @p1971, @p1972, @p1973, @p1974, 394),
+(@p1975, @p1976, @p1977, @p1978, @p1979, 395),
+(@p1980, @p1981, @p1982, @p1983, @p1984, 396),
+(@p1985, @p1986, @p1987, @p1988, @p1989, 397),
+(@p1990, @p1991, @p1992, @p1993, @p1994, 398),
+(@p1995, @p1996, @p1997, @p1998, @p1999, 399),
+(@p2000, @p2001, @p2002, @p2003, @p2004, 400),
+(@p2005, @p2006, @p2007, @p2008, @p2009, 401),
+(@p2010, @p2011, @p2012, @p2013, @p2014, 402),
+(@p2015, @p2016, @p2017, @p2018, @p2019, 403),
+(@p2020, @p2021, @p2022, @p2023, @p2024, 404),
+(@p2025, @p2026, @p2027, @p2028, @p2029, 405),
+(@p2030, @p2031, @p2032, @p2033, @p2034, 406),
+(@p2035, @p2036, @p2037, @p2038, @p2039, 407),
+(@p2040, @p2041, @p2042, @p2043, @p2044, 408),
+(@p2045, @p2046, @p2047, @p2048, @p2049, 409),
+(@p2050, @p2051, @p2052, @p2053, @p2054, 410),
+(@p2055, @p2056, @p2057, @p2058, @p2059, 411),
+(@p2060, @p2061, @p2062, @p2063, @p2064, 412),
+(@p2065, @p2066, @p2067, @p2068, @p2069, 413),
+(@p2070, @p2071, @p2072, @p2073, @p2074, 414),
+(@p2075, @p2076, @p2077, @p2078, @p2079, 415),
+(@p2080, @p2081, @p2082, @p2083, @p2084, 416),
+(@p2085, @p2086, @p2087, @p2088, @p2089, 417),
+(@p2090, @p2091, @p2092, @p2093, @p2094, 418)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executed DbCommand (702ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000), @p100='?' (Size = 4000), @p101='?', @p102='?' (Size = 4000), @p103='?', @p104='?' (Size = 4000), @p105='?' (Size = 4000), @p106='?', @p107='?' (Size = 4000), @p108='?', @p109='?' (Size = 4000), @p110='?' (Size = 4000), @p111='?', @p112='?' (Size = 4000), @p113='?', @p114='?' (Size = 4000), @p115='?' (Size = 4000), @p116='?', @p117='?' (Size = 4000), @p118='?', @p119='?' (Size = 4000), @p120='?' (Size = 4000), @p121='?', @p122='?' (Size = 4000), @p123='?', @p124='?' (Size = 4000), @p125='?' (Size = 4000), @p126='?', @p127='?' (Size = 4000), @p128='?', @p129='?' (Size = 4000), @p130='?' (Size = 4000), @p131='?', @p132='?' (Size = 4000), @p133='?', @p134='?' (Size = 4000), @p135='?' (Size = 4000), @p136='?', @p137='?' (Size = 4000), @p138='?', @p139='?' (Size = 4000), @p140='?' (Size = 4000), @p141='?', @p142='?' (Size = 4000), @p143='?', @p144='?' (Size = 4000), @p145='?' (Size = 4000), @p146='?', @p147='?' (Size = 4000), @p148='?', @p149='?' (Size = 4000), @p150='?' (Size = 4000), @p151='?', @p152='?' (Size = 4000), @p153='?', @p154='?' (Size = 4000), @p155='?' (Size = 4000), @p156='?', @p157='?' (Size = 4000), @p158='?', @p159='?' (Size = 4000), @p160='?' (Size = 4000), @p161='?', @p162='?' (Size = 4000), @p163='?', @p164='?' (Size = 4000), @p165='?' (Size = 4000), @p166='?', @p167='?' (Size = 4000), @p168='?', @p169='?' (Size = 4000), @p170='?' (Size = 4000), @p171='?', @p172='?' (Size = 4000), @p173='?', @p174='?' (Size = 4000), @p175='?' (Size = 4000), @p176='?', @p177='?' (Size = 4000), @p178='?', @p179='?' (Size = 4000), @p180='?' (Size = 4000), @p181='?', @p182='?' (Size = 4000), @p183='?', @p184='?' (Size = 4000), @p185='?' (Size = 4000), @p186='?', @p187='?' (Size = 4000), @p188='?', @p189='?' (Size = 4000), @p190='?' (Size = 4000), @p191='?', @p192='?' (Size = 4000), @p193='?', @p194='?' (Size = 4000), @p195='?' (Size = 4000), @p196='?', @p197='?' (Size = 4000), @p198='?', @p199='?' (Size = 4000), @p200='?' (Size = 4000), @p201='?', @p202='?' (Size = 4000), @p203='?', @p204='?' (Size = 4000), @p205='?' (Size = 4000), @p206='?', @p207='?' (Size = 4000), @p208='?', @p209='?' (Size = 4000), @p210='?' (Size = 4000), @p211='?', @p212='?' (Size = 4000), @p213='?', @p214='?' (Size = 4000), @p215='?' (Size = 4000), @p216='?', @p217='?' (Size = 4000), @p218='?', @p219='?' (Size = 4000), @p220='?' (Size = 4000), @p221='?', @p222='?' (Size = 4000), @p223='?', @p224='?' (Size = 4000), @p225='?' (Size = 4000), @p226='?', @p227='?' (Size = 4000), @p228='?', @p229='?' (Size = 4000), @p230='?' (Size = 4000), @p231='?', @p232='?' (Size = 4000), @p233='?', @p234='?' (Size = 4000), @p235='?' (Size = 4000), @p236='?', @p237='?' (Size = 4000), @p238='?', @p239='?' (Size = 4000), @p240='?' (Size = 4000), @p241='?', @p242='?' (Size = 4000), @p243='?', @p244='?' (Size = 4000), @p245='?' (Size = 4000), @p246='?', @p247='?' (Size = 4000), @p248='?', @p249='?' (Size = 4000), @p250='?' (Size = 4000), @p251='?', @p252='?' (Size = 4000), @p253='?', @p254='?' (Size = 4000), @p255='?' (Size = 4000), @p256='?', @p257='?' (Size = 4000), @p258='?', @p259='?' (Size = 4000), @p260='?' (Size = 4000), @p261='?', @p262='?' (Size = 4000), @p263='?', @p264='?' (Size = 4000), @p265='?' (Size = 4000), @p266='?', @p267='?' (Size = 4000), @p268='?', @p269='?' (Size = 4000), @p270='?' (Size = 4000), @p271='?', @p272='?' (Size = 4000), @p273='?', @p274='?' (Size = 4000), @p275='?' (Size = 4000), @p276='?', @p277='?' (Size = 4000), @p278='?', @p279='?' (Size = 4000), @p280='?' (Size = 4000), @p281='?', @p282='?' (Size = 4000), @p283='?', @p284='?' (Size = 4000), @p285='?' (Size = 4000), @p286='?', @p287='?' (Size = 4000), @p288='?', @p289='?' (Size = 4000), @p290='?' (Size = 4000), @p291='?', @p292='?' (Size = 4000), @p293='?', @p294='?' (Size = 4000), @p295='?' (Size = 4000), @p296='?', @p297='?' (Size = 4000), @p298='?', @p299='?' (Size = 4000), @p300='?' (Size = 4000), @p301='?', @p302='?' (Size = 4000), @p303='?', @p304='?' (Size = 4000), @p305='?' (Size = 4000), @p306='?', @p307='?' (Size = 4000), @p308='?', @p309='?' (Size = 4000), @p310='?' (Size = 4000), @p311='?', @p312='?' (Size = 4000), @p313='?', @p314='?' (Size = 4000), @p315='?' (Size = 4000), @p316='?', @p317='?' (Size = 4000), @p318='?', @p319='?' (Size = 4000), @p320='?' (Size = 4000), @p321='?', @p322='?' (Size = 4000), @p323='?', @p324='?' (Size = 4000), @p325='?' (Size = 4000), @p326='?', @p327='?' (Size = 4000), @p328='?', @p329='?' (Size = 4000), @p330='?' (Size = 4000), @p331='?', @p332='?' (Size = 4000), @p333='?', @p334='?' (Size = 4000), @p335='?' (Size = 4000), @p336='?', @p337='?' (Size = 4000), @p338='?', @p339='?' (Size = 4000), @p340='?' (Size = 4000), @p341='?', @p342='?' (Size = 4000), @p343='?', @p344='?' (Size = 4000), @p345='?' (Size = 4000), @p346='?', @p347='?' (Size = 4000), @p348='?', @p349='?' (Size = 4000), @p350='?' (Size = 4000), @p351='?', @p352='?' (Size = 4000), @p353='?', @p354='?' (Size = 4000), @p355='?' (Size = 4000), @p356='?', @p357='?' (Size = 4000), @p358='?', @p359='?' (Size = 4000), @p360='?' (Size = 4000), @p361='?', @p362='?' (Size = 4000), @p363='?', @p364='?' (Size = 4000), @p365='?' (Size = 4000), @p366='?', @p367='?' (Size = 4000), @p368='?', @p369='?' (Size = 4000), @p370='?' (Size = 4000), @p371='?', @p372='?' (Size = 4000), @p373='?', @p374='?' (Size = 4000), @p375='?' (Size = 4000), @p376='?', @p377='?' (Size = 4000), @p378='?', @p379='?' (Size = 4000), @p380='?' (Size = 4000), @p381='?', @p382='?' (Size = 4000), @p383='?', @p384='?' (Size = 4000), @p385='?' (Size = 4000), @p386='?', @p387='?' (Size = 4000), @p388='?', @p389='?' (Size = 4000), @p390='?' (Size = 4000), @p391='?', @p392='?' (Size = 4000), @p393='?', @p394='?' (Size = 4000), @p395='?' (Size = 4000), @p396='?', @p397='?' (Size = 4000), @p398='?', @p399='?' (Size = 4000), @p400='?' (Size = 4000), @p401='?', @p402='?' (Size = 4000), @p403='?', @p404='?' (Size = 4000), @p405='?' (Size = 4000), @p406='?', @p407='?' (Size = 4000), @p408='?', @p409='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19),
+(@p100, @p101, @p102, @p103, @p104, 20),
+(@p105, @p106, @p107, @p108, @p109, 21),
+(@p110, @p111, @p112, @p113, @p114, 22),
+(@p115, @p116, @p117, @p118, @p119, 23),
+(@p120, @p121, @p122, @p123, @p124, 24),
+(@p125, @p126, @p127, @p128, @p129, 25),
+(@p130, @p131, @p132, @p133, @p134, 26),
+(@p135, @p136, @p137, @p138, @p139, 27),
+(@p140, @p141, @p142, @p143, @p144, 28),
+(@p145, @p146, @p147, @p148, @p149, 29),
+(@p150, @p151, @p152, @p153, @p154, 30),
+(@p155, @p156, @p157, @p158, @p159, 31),
+(@p160, @p161, @p162, @p163, @p164, 32),
+(@p165, @p166, @p167, @p168, @p169, 33),
+(@p170, @p171, @p172, @p173, @p174, 34),
+(@p175, @p176, @p177, @p178, @p179, 35),
+(@p180, @p181, @p182, @p183, @p184, 36),
+(@p185, @p186, @p187, @p188, @p189, 37),
+(@p190, @p191, @p192, @p193, @p194, 38),
+(@p195, @p196, @p197, @p198, @p199, 39),
+(@p200, @p201, @p202, @p203, @p204, 40),
+(@p205, @p206, @p207, @p208, @p209, 41),
+(@p210, @p211, @p212, @p213, @p214, 42),
+(@p215, @p216, @p217, @p218, @p219, 43),
+(@p220, @p221, @p222, @p223, @p224, 44),
+(@p225, @p226, @p227, @p228, @p229, 45),
+(@p230, @p231, @p232, @p233, @p234, 46),
+(@p235, @p236, @p237, @p238, @p239, 47),
+(@p240, @p241, @p242, @p243, @p244, 48),
+(@p245, @p246, @p247, @p248, @p249, 49),
+(@p250, @p251, @p252, @p253, @p254, 50),
+(@p255, @p256, @p257, @p258, @p259, 51),
+(@p260, @p261, @p262, @p263, @p264, 52),
+(@p265, @p266, @p267, @p268, @p269, 53),
+(@p270, @p271, @p272, @p273, @p274, 54),
+(@p275, @p276, @p277, @p278, @p279, 55),
+(@p280, @p281, @p282, @p283, @p284, 56),
+(@p285, @p286, @p287, @p288, @p289, 57),
+(@p290, @p291, @p292, @p293, @p294, 58),
+(@p295, @p296, @p297, @p298, @p299, 59),
+(@p300, @p301, @p302, @p303, @p304, 60),
+(@p305, @p306, @p307, @p308, @p309, 61),
+(@p310, @p311, @p312, @p313, @p314, 62),
+(@p315, @p316, @p317, @p318, @p319, 63),
+(@p320, @p321, @p322, @p323, @p324, 64),
+(@p325, @p326, @p327, @p328, @p329, 65),
+(@p330, @p331, @p332, @p333, @p334, 66),
+(@p335, @p336, @p337, @p338, @p339, 67),
+(@p340, @p341, @p342, @p343, @p344, 68),
+(@p345, @p346, @p347, @p348, @p349, 69),
+(@p350, @p351, @p352, @p353, @p354, 70),
+(@p355, @p356, @p357, @p358, @p359, 71),
+(@p360, @p361, @p362, @p363, @p364, 72),
+(@p365, @p366, @p367, @p368, @p369, 73),
+(@p370, @p371, @p372, @p373, @p374, 74),
+(@p375, @p376, @p377, @p378, @p379, 75),
+(@p380, @p381, @p382, @p383, @p384, 76),
+(@p385, @p386, @p387, @p388, @p389, 77),
+(@p390, @p391, @p392, @p393, @p394, 78),
+(@p395, @p396, @p397, @p398, @p399, 79),
+(@p400, @p401, @p402, @p403, @p404, 80),
+(@p405, @p406, @p407, @p408, @p409, 81)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 25514.3352ms
+Request finished in 26277.15ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (18ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5416.4938ms
+Request finished in 5907.1862ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 3153.9001ms 200 
+Request finished in 6977.2928ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 76
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (341ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (42ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (29ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 21348.3187ms
+Request finished in 22504.3841ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 76
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (34ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (1ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1494.4163ms 200 
+Request finished in 3019.967ms 404 
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 86
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (243ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (134ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (15ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 86
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 595.2908ms 200 
+Request finished in 1832.0093ms 404 
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (315ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (84ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (10ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 86
+Request finished in 1488.5572ms 200 
+Request finished in 3152.0215ms 404 
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (311ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name]
+FROM [Collections] AS [x]
+WHERE [x].[Id] = @__id_0
+Executed DbCommand (39ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Feeds] ([FeedType], [Url])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Feeds]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+Executed DbCommand (10ms) [Parameters=[@p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p2, @p3);
+Executed DbCommand (603ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?' (Size = 4000), @p3='?', @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?', @p7='?' (Size = 4000), @p8='?', @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 4000), @p18='?', @p19='?' (Size = 4000), @p20='?' (Size = 4000), @p21='?', @p22='?' (Size = 4000), @p23='?', @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?', @p27='?' (Size = 4000), @p28='?', @p29='?' (Size = 4000), @p30='?' (Size = 4000), @p31='?', @p32='?' (Size = 4000), @p33='?', @p34='?' (Size = 4000), @p35='?' (Size = 4000), @p36='?', @p37='?' (Size = 4000), @p38='?', @p39='?' (Size = 4000), @p40='?' (Size = 4000), @p41='?', @p42='?' (Size = 4000), @p43='?', @p44='?' (Size = 4000), @p45='?' (Size = 4000), @p46='?', @p47='?' (Size = 4000), @p48='?', @p49='?' (Size = 4000), @p50='?' (Size = 4000), @p51='?', @p52='?' (Size = 4000), @p53='?', @p54='?' (Size = 4000), @p55='?' (Size = 4000), @p56='?', @p57='?' (Size = 4000), @p58='?', @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?', @p62='?' (Size = 4000), @p63='?', @p64='?' (Size = 4000), @p65='?' (Size = 4000), @p66='?', @p67='?' (Size = 4000), @p68='?', @p69='?' (Size = 4000), @p70='?' (Size = 4000), @p71='?', @p72='?' (Size = 4000), @p73='?', @p74='?' (Size = 4000), @p75='?' (Size = 4000), @p76='?', @p77='?' (Size = 4000), @p78='?', @p79='?' (Size = 4000), @p80='?' (Size = 4000), @p81='?', @p82='?' (Size = 4000), @p83='?', @p84='?' (Size = 4000), @p85='?' (Size = 4000), @p86='?', @p87='?' (Size = 4000), @p88='?', @p89='?' (Size = 4000), @p90='?' (Size = 4000), @p91='?', @p92='?' (Size = 4000), @p93='?', @p94='?' (Size = 4000), @p95='?' (Size = 4000), @p96='?', @p97='?' (Size = 4000), @p98='?', @p99='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] bigint, [_Position] [int]);
+MERGE [News] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2),
+(@p15, @p16, @p17, @p18, @p19, 3),
+(@p20, @p21, @p22, @p23, @p24, 4),
+(@p25, @p26, @p27, @p28, @p29, 5),
+(@p30, @p31, @p32, @p33, @p34, 6),
+(@p35, @p36, @p37, @p38, @p39, 7),
+(@p40, @p41, @p42, @p43, @p44, 8),
+(@p45, @p46, @p47, @p48, @p49, 9),
+(@p50, @p51, @p52, @p53, @p54, 10),
+(@p55, @p56, @p57, @p58, @p59, 11),
+(@p60, @p61, @p62, @p63, @p64, 12),
+(@p65, @p66, @p67, @p68, @p69, 13),
+(@p70, @p71, @p72, @p73, @p74, 14),
+(@p75, @p76, @p77, @p78, @p79, 15),
+(@p80, @p81, @p82, @p83, @p84, 16),
+(@p85, @p86, @p87, @p88, @p89, 17),
+(@p90, @p91, @p92, @p93, @p94, 18),
+(@p95, @p96, @p97, @p98, @p99, 19)) AS i ([Content], [FeedId], [Link], [PublishDate], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Content], [FeedId], [Link], [PublishDate], [Title])
+VALUES (i.[Content], i.[FeedId], i.[Link], i.[PublishDate], i.[Title])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [News] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 109220.4098ms
+Request finished in 114416.8026ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (11ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 26099.5541ms
+Request finished in 27916.6107ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1227.7417ms 200 
+Request finished in 5051.2387ms 404 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 3235.1589ms 200 
+Request finished in 5048.2175ms 404 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 1702.5985ms 200 
+Request finished in 3622.9419ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (477ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 10583.1523ms
+Request finished in 12358.6647ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 5431.3937ms 200 
+Request finished in 10219.3501ms 404 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request finished in 3179.1981ms 200 
+Request finished in 5458.4771ms 404 
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 86
+Request finished in 3254.7572ms 200 
+Request finished in 5302.6841ms 404 
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (565ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Collections] AS [c]
+WHERE [c].[Id] = @__id_0
+ORDER BY [c].[Id]
+Executed DbCommand (188ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c.CollectionFeed].[CollectionId], [c.CollectionFeed].[FeedId]
+FROM [CollectionFeed] AS [c.CollectionFeed]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [Collections] AS [c0]
+    WHERE [c0].[Id] = @__id_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.CollectionFeed].[CollectionId] = [t].[Id]
+ORDER BY [t].[Id]
+Executed DbCommand (169ms) [Parameters=[@__feed_Url_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[FeedType], [x].[Url]
+FROM [Feeds] AS [x]
+WHERE [x].[Url] = @__feed_Url_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 19000.9846ms
+Request finished in 29088.9681ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 86
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (12ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Collections] AS [c]
+WHERE [c].[Id] = @__id_0
+ORDER BY [c].[Id]
+Executed DbCommand (8ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c.CollectionFeed].[CollectionId], [c.CollectionFeed].[FeedId]
+FROM [CollectionFeed] AS [c.CollectionFeed]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [Collections] AS [c0]
+    WHERE [c0].[Id] = @__id_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.CollectionFeed].[CollectionId] = [t].[Id]
+ORDER BY [t].[Id]
+Executed DbCommand (34ms) [Parameters=[@__feed_Url_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[FeedType], [x].[Url]
+FROM [Feeds] AS [x]
+WHERE [x].[Url] = @__feed_Url_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 1149.069ms
+Request finished in 1476.4124ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/1 application/json 126
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (1, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (23ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Collections] AS [c]
+WHERE [c].[Id] = @__id_0
+ORDER BY [c].[Id]
+Executed DbCommand (38ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c.CollectionFeed].[CollectionId], [c.CollectionFeed].[FeedId]
+FROM [CollectionFeed] AS [c.CollectionFeed]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [Collections] AS [c0]
+    WHERE [c0].[Id] = @__id_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.CollectionFeed].[CollectionId] = [t].[Id]
+ORDER BY [t].[Id]
+Executed DbCommand (1ms) [Parameters=[@__feed_Url_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[FeedType], [x].[Url]
+FROM [Feeds] AS [x]
+WHERE [x].[Url] = @__feed_Url_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 20076.4798ms
+Request finished in 20160.3571ms 400 text/plain; charset=utf-8
+Request starting HTTP/1.1 PUT http://localhost:50562/api/collection/2 application/json 86
+Executing action method CMS.Controllers.CollectionController.Put (CMS) with arguments (2, CMS.Models.Feeds.Feed) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (6ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Collections] AS [c]
+WHERE [c].[Id] = @__id_0
+ORDER BY [c].[Id]
+Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [c.CollectionFeed].[CollectionId], [c.CollectionFeed].[FeedId]
+FROM [CollectionFeed] AS [c.CollectionFeed]
+INNER JOIN (
+    SELECT TOP(1) [c0].[Id]
+    FROM [Collections] AS [c0]
+    WHERE [c0].[Id] = @__id_0
+    ORDER BY [c0].[Id]
+) AS [t] ON [c.CollectionFeed].[CollectionId] = [t].[Id]
+ORDER BY [t].[Id]
+Executed DbCommand (1ms) [Parameters=[@__feed_Url_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[FeedType], [x].[Url]
+FROM [Feeds] AS [x]
+WHERE [x].[Url] = @__feed_Url_0
+Executed DbCommand (232ms) [Parameters=[@p0='?', @p1='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CollectionFeed] ([CollectionId], [FeedId])
+VALUES (@p0, @p1);
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Put (CMS) in 2541.9429ms
+Request finished in 2874.1963ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1322.3298ms 200 
+Request finished in 3177.4806ms 404 
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (250ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (623ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 39445.436ms
+Request finished in 42522.1875ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (3ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 7550.0866ms
+Request finished in 8473.2956ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 10443.9223ms
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Request finished in 11516.5699ms 200 application/json; charset=utf-8
+Executed DbCommand (17ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 11110.4718ms
+Request finished in 13440.3696ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/2  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (2) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (10ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (158ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 5288.0377ms
+Request finished in 6205.4879ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection/1  
+Executing action method CMS.Controllers.CollectionController.Get (CMS) with arguments (1) - ModelState is Valid
+Entity Framework Core 2.0.3-rtm-10026 initialized 'FeedsContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (21ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0
+Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action CMS.Controllers.CollectionController.Get (CMS) in 9199.969ms
+Request finished in 9302.2016ms 200 application/json; charset=utf-8

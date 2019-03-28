@@ -13,29 +13,45 @@ namespace CMS.Models.Feeds
         {
             get
             {
-                return FeedType.Atom;
+                return FeedType.RSS;
             }
         }
 
-        public  IList<NewsItem> GetNews(string url)
+        public IList<NewsItem> GetNews(Feed feed)
         {
             try
             {
-                XDocument doc = XDocument.Load(url);
-                var entries = from item in doc.Root.Descendants().First(i => i.Name.LocalName == "channel").Elements().Where(i => i.Name.LocalName == "item")
-                              select new NewsItem()
-                              {
-                                  Link = item.Elements().First(i => i.Name.LocalName == "link").Value,
-                                  Content = item.Elements().First(i => i.Name.LocalName == "description").Value,
-                                  PublishDate = DateTime.Parse(item.Elements().First(i => i.Name.LocalName == "pubDate").Value),
-                                  Title = item.Elements().First(i => i.Name.LocalName == "title").Value
-                              };
+                XDocument doc = XDocument.Load(feed.Url);
+                List<NewsItem> entries = new List<NewsItem>();
+                var items = doc.Descendants("item");
+                foreach (XElement item in items)
+                {
+                    entries.Add(new NewsItem()
+                    {
+                        Link = FillParams("link", item),
+                        Content = FillParams("description", item),
+                        PublishDate = DateTime.TryParse(FillParams("pubDate", item), out DateTime validValue) ? validValue : (DateTime?)null,
+                        Title = FillParams("title", item),
+                        Feed = feed
+                    });
+
+                }
+
+
                 return (IList<NewsItem>)entries.ToList();
             }
-            catch
+            catch(Exception ex)
             {
                 return new List<NewsItem>();
             }
+
+
+        }
+
+        private string FillParams(string text, XElement item)
+        {
+            XElement result = item.Elements().FirstOrDefault(i => i.Name.LocalName == text);
+            return result == null ? "" : result.Value;
         }
 
     }

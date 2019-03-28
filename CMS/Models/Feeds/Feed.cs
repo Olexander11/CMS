@@ -14,7 +14,8 @@ namespace CMS.Models.Feeds
         [Required]
         public FeedType FeedType { get; set; }
         public List<NewsItem> News { get; set; }
-        public List<CollectionFeeds> Collections { get; set; }
+
+        public IList<CollectionFeed> CollectionFeed { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using CMS.Models.Feeds;
+﻿using CMS.Models;
+using CMS.Models.Feeds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,44 +7,51 @@ using System.Threading.Tasks;
 
 namespace CMS.Services
 {
-    public class ReadFeedsService
+    public class ReadFeedsService : ITimeService
     {
+        private int _timeHour;
         FeedsContext db;
-        public ReadFeedsService (FeedsContext context)
+        FileLogger _logger;
+
+        public int TimeIntervalHours
+        {
+            get { return _timeHour; }
+            set { _timeHour = value; }
+        }
+
+        public ReadFeedsService(FeedsContext context)
         {
             this.db = context;
-           
-        }
-        public ReadFeedsService()
-        {
-           
         }
 
-        public void ReloadAllNews() {
-            var feeds = db.Feeds.ToList();
-            foreach (Feed feed in feeds)
-            {
-                UpdateCurrentFeed(feed.Id);
-            }
-         }
+     
 
-        private void UpdateCurrentFeed(long id)
+        public void DoService()
         {
-            Feed link = db.Feeds.FirstOrDefault(x => x.Id == id);
-            List<NewsItem> oldItems = link.News.ToList();
-            List<NewsItem> updateItems = new List<NewsItem>();
-            var newsItems = SourceFactory.Instance.GetSourceNews(link.FeedType).GetNews(link.Url);
-
-            foreach (NewsItem item in newsItems)
+            try
             {
-                if (!oldItems.Exists(x => x.Title == item.Title))
+              db = new FeedsContext();
+              var feeds = db.Feeds.ToList();
+
+
+                foreach (Feed feed in feeds)
                 {
-                    updateItems.Add(item);
+                    var oldNews = db.News.Where(x => x.Feed == feed).ToList();
+                    if (oldNews.Count != 0) { db.News.RemoveRange(oldNews); }
+                                       
+                    var newsItems = SourceFactory.Instance.GetSourceNews(feed.FeedType).GetNews(feed);
+                    if (newsItems.Count == 0) continue;
+                    db.News.AddRange(newsItems);
                 }
+                db.SaveChanges();
+            }
+            catch (Exception e) {
+                // _logger.Log(Microsoft.Extensions.Logging.LogLevel.Error,,e,);
+                int t = 1;
             }
 
-            link.News.AddRange(updateItems);
-            db.SaveChanges();
         }
+
+                
     }
 }

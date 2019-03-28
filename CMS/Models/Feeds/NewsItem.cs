@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System;
+using System.Runtime.Serialization;
 
 namespace CMS.Models.Feeds
 {
@@ -12,7 +10,9 @@ namespace CMS.Models.Feeds
         public string Link { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public DateTime PublishDate { get; set; }
+        public DateTime? PublishDate { get; set; }
+        [JsonIgnore]
+        [IgnoreDataMember]
         public Feed Feed { get; set; }
 
 
