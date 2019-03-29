@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using CMS.Models.Feeds;
-using CMS.Models.Logg;
 using CMS.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,21 +43,18 @@ namespace CMS
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, ITimeService feedService)
         {
-            DateTime now = DateTime.Now;
-            string logFile = now.ToString("ddMMyy") + "logger.txt";
-            loggerFactory.AddFile(Path.Combine(Path.Combine(Directory.GetCurrentDirectory(), "Logs"), logFile));
-            var logger = loggerFactory.CreateLogger("FileLogger");
-
+            loggerFactory.AddFile("Logs/CMS-{Date}.txt");
 
             feedService.TimeIntervalHours = 1;
             Task.Run(async () =>
             {
-                await Task.Delay(1000 * 30);
+                // updating existing feeds after 90 seconds
+                await Task.Delay(1000 * 90);
                 while (true)
                 {
 
                     feedService.DoService();
-                    await Task.Delay(feedService.TimeIntervalHours * 60 * 1000);
+                    await Task.Delay(feedService.TimeIntervalHours * 60 * 60 * 1000);
 
                 }
             });

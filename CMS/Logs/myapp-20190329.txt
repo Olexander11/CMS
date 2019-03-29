@@ -1,0 +1,52 @@
+2019-03-29T19:40:31.2547366+02:00 0HLLKDMHH58VG:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:57578/  0 (ca22a1cb)
+2019-03-29T19:40:31.2257349+02:00 0HLLKDMHH58VH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:57578/api/collection   (ca22a1cb)
+2019-03-29T19:40:32.7608227+02:00 0HLLKDMHH58VG:00000001 [INF] Request finished in 1654.032ms 200  (791a596a)
+2019-03-29T19:40:34.8049396+02:00 0HLLKDMHH58VH:00000001 [INF] Executing action method "CMS.Controllers.CollectionController.GetAllCollection (CMS)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-29T19:40:34.8289410+02:00 0HLLKDMHH58VH:00000001 [INF] GET request api/Collection  (1ed2b7b8)
+2019-03-29T19:40:36.2330213+02:00 0HLLKDMHH58VH:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"FeedsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-03-29T19:40:47.9696926+02:00 0HLLKDMHH58VH:00000001 [INF] Executed DbCommand ("247"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Name]
+FROM [Collections] AS [c]" (0723d8ff)
+2019-03-29T19:40:50.2958256+02:00 0HLLKDMHH58VH:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T19:40:53.1809907+02:00 0HLLKDMHH58VH:00000001 [INF] Executed action "CMS.Controllers.CollectionController.GetAllCollection (CMS)" in 17648.7311ms (afa2e885)
+2019-03-29T19:40:53.7300221+02:00 0HLLKDMHH58VH:00000001 [INF] Request finished in 22204.9998ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-29T19:41:30.1321041+02:00 0HLLKDMHH58VG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:57578/api/collection/1   (ca22a1cb)
+2019-03-29T19:41:30.4561227+02:00 0HLLKDMHH58VG:00000002 [INF] Executing action method "CMS.Controllers.CollectionController.Get (CMS)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2019-03-29T19:41:30.5071256+02:00 0HLLKDMHH58VG:00000002 [INF] GET request api/Collection/1 (0ee7863c)
+2019-03-29T19:41:30.5841300+02:00 0HLLKDMHH58VG:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"FeedsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-03-29T19:41:31.2191663+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("202"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.Feed].[Id], [x.Feed].[FeedType], [x.Feed].[Url]
+FROM [CollectionFeed] AS [x]
+INNER JOIN [Feeds] AS [x.Feed] ON [x].[FeedId] = [x.Feed].[Id]
+WHERE [x].[CollectionId] = @__id_0" (0723d8ff)
+2019-03-29T19:41:32.5152405+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("434"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:32.7902562+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:32.8502596+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:33.0162691+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:33.2662834+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:33.9463223+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("226"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:34.0113260+02:00 0HLLKDMHH58VG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.News].[Id], [x.News].[Content], [x.News].[FeedId], [x.News].[Link], [x.News].[PublishDate], [x.News].[Title]
+FROM [Feeds] AS [x]
+INNER JOIN [News] AS [x.News] ON [x].[Id] = [x.News].[FeedId]" (0723d8ff)
+2019-03-29T19:41:34.1123318+02:00 0HLLKDMHH58VG:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-29T19:41:39.8296588+02:00 0HLLKDMHH58VG:00000002 [INF] Executed action "CMS.Controllers.CollectionController.Get (CMS)" in 9371.7634ms (afa2e885)
+2019-03-29T19:41:39.8786616+02:00 0HLLKDMHH58VG:00000002 [INF] Request finished in 9716.6851ms 200 application/json; charset=utf-8 (791a596a)

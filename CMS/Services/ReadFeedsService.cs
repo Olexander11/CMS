@@ -11,8 +11,7 @@ namespace CMS.Services
     {
         private int _timeHour;
         FeedsContext db;
-        FileLogger _logger;
-
+        
         public int TimeIntervalHours
         {
             get { return _timeHour; }

@@ -6,7 +6,7 @@ using CMS.Models.Feeds;
 using CMS.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.Extensions.Logging;
 
 namespace CMS.Controllers
 {
@@ -14,9 +14,11 @@ namespace CMS.Controllers
     public class CollectionController : Controller
     {
         FeedsContext db;
-       
-        public CollectionController(FeedsContext context)
+        readonly ILogger<CollectionController> log;
+
+        public CollectionController(FeedsContext context, ILogger<CollectionController> log)
         {
+            this.log = log;
             this.db = context;
         }
 
@@ -24,15 +26,15 @@ namespace CMS.Controllers
         [HttpGet]
         public IActionResult GetAllCollection()
         {
-          return new ObjectResult(db.Collections.ToList());
+            log.LogInformation("GET request api/Collection ");
+            return new ObjectResult(db.Collections.ToList());
         }
         // GET api/Collection/id  Get all news for a collection{id}
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
+            log.LogInformation("GET request api/Collection/"+id);
             List<Feed> feeds = db.CollectionFeed.Where(x => x.CollectionId == id).Select(x =>x.Feed).ToList();
-
-
             if (feeds == null) return NotFound();
             List<NewsItem> result = new List<NewsItem>();
             foreach (Feed feed in feeds)
@@ -52,6 +54,7 @@ namespace CMS.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]Collection collection)
         {
+            log.LogInformation("Post request api/Collection to create new collection");
             if (collection == null)
             {
                 return BadRequest();
@@ -67,6 +70,7 @@ namespace CMS.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(long id, [FromBody]Feed feed)
         {
+            log.LogInformation("PUT request api/Collection/" + id+ " to add feed in collection(id)");
             if (feed == null)
             {
                 return BadRequest();
