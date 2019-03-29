@@ -45,10 +45,8 @@ namespace CMS.Services
                 }
                 db.SaveChanges();
             }
-            catch (Exception e) {
-                // _logger.Log(Microsoft.Extensions.Logging.LogLevel.Error,,e,);
-                int t = 1;
-            }
+            catch
+            { }
 
         }
 

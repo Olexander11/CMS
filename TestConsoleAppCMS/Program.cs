@@ -23,12 +23,12 @@ namespace TestConsoleAppCMS
             Console.WriteLine("We create new collection. Id = " + content);
 
             // put RSS
-            var request1 = new RestRequest("api/collection", Method.PUT);
-            request1.AddParameter("Url", "https://www.feedforall.com/blog-feed.xml");
-            request1.AddParameter("FeedType", "RSS");
-            IRestResponse response1 = client.Execute(request1);
-            content = response.Content;
-            Console.WriteLine("We create new collection. Id = " + content);
+            //var request1 = new RestRequest("api/collection", Method.PUT);
+            //request1.AddParameter("Url", "https://www.feedforall.com/blog-feed.xml");
+            //request1.AddParameter("FeedType", "RSS");
+            //IRestResponse response1 = client.Execute(request1);
+            //content = response.Content;
+            //Console.WriteLine("We create new collection. Id = " + content);
 
             Console.ReadKey();
         }

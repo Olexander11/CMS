@@ -1,0 +1,4 @@
+Request starting HTTP/1.1 GET http://localhost:50562/api/collection  
+Request starting HTTP/1.1 DEBUG http://localhost:50562/  0
+Request finished in 1787.3032ms 200 
+Request finished in 2877.0665ms 404 

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CMS", "CMS\CMS.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleAppCMS", "TestConsoleAppCMS\TestConsoleAppCMS.csproj", "{46BFAA99-6125-40E7-9462-3BCEA71EF7A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestCMS", "XUnitTestCMS\XUnitTestCMS.csproj", "{DC04C91E-B7E2-4500-ABF0-9FF7962DAB28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{46BFAA99-6125-40E7-9462-3BCEA71EF7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BFAA99-6125-40E7-9462-3BCEA71EF7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BFAA99-6125-40E7-9462-3BCEA71EF7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC04C91E-B7E2-4500-ABF0-9FF7962DAB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC04C91E-B7E2-4500-ABF0-9FF7962DAB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC04C91E-B7E2-4500-ABF0-9FF7962DAB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC04C91E-B7E2-4500-ABF0-9FF7962DAB28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

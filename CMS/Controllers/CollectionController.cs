@@ -20,7 +20,13 @@ namespace CMS.Controllers
             this.db = context;
         }
 
-        // GET api/id Collection  Get all news for a collection{id}
+        // GET api/Collection  Get all  collections
+        [HttpGet]
+        public IActionResult GetAllCollection()
+        {
+          return new ObjectResult(db.Collections.ToList());
+        }
+        // GET api/Collection/id  Get all news for a collection{id}
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
